@@ -1,9 +1,6 @@
 import styles from './Projects.module.css';
-import ProjectCard from '../components/ProjectCard';
+import ProjectCard from '../../components/ProjectCard';
 
-import alienImg from '../assets/alien-invasion.jpg';
-import resumeImg from '../assets/resume-gen.jpg';
-import goblinImg from '../assets/goblin-chase.jpg';
 
 export default function Projects() {
     return (
@@ -13,17 +10,17 @@ export default function Projects() {
                 <ProjectCard
                     title="Alien Invasion"
                     description="A Unity tower defense game built with a team."
-                    image={alienImg}
+                    image="null"
                 />
                 <ProjectCard
                     title="Resume Generator"
                     description="A local web app for generating resumes."
-                    image={resumeImg}
+                    image="null"
                 />
                 <ProjectCard
                     title="Goblin Chase"
                     description="A Unity bullet-hell platformer."
-                    image={goblinImg}
+                    image="null"
                 />
             </div>
         </div>

@@ -1,14 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-// import {
-//   BrowserRouter as Router,
-//   Routes,
-//   Route,
-//   Link,
-//   useParams,
-// } from "react-router-dom";
-
 import ProjectCard from "./components/ProjectCard";
 
 import type { Project } from "./types/Project";
@@ -41,8 +33,8 @@ function App() {
       id: i,
       title: proj.name,
       description: proj.desc.join(" "),
-      image: proj.image ?? "",
-      tags: proj.tags ?? [],
+      image: proj.id ?? "null",
+      keywords: proj.keywords ?? [],
       type: "project" as const,
     })),
     ...jobs
@@ -51,8 +43,8 @@ function App() {
       id: i + 1000, // offset to prevent key conflicts
       title: job.title,
       description: (job.description ?? []).join(" "),
-      image: job.image ?? "",
-      tags: job.tags ?? [],
+      image: job.id ?? "null",
+      keywords: job.keywords ?? [],
       type: "job" as const,
     })),
   ];
@@ -60,7 +52,7 @@ function App() {
   const filteredItems = allItems.filter(
     (item) =>
       item.type === selectedTab &&
-      (item.title + item.description + item.tags.join(" "))
+      (item.title + item.description + item.keywords.join(" "))
         .toLowerCase()
         .includes(searchTerm.toLowerCase())
   );
@@ -106,17 +98,17 @@ function App() {
             {filteredItems.map((item) =>
               item.type === "project" ? (
                 <ProjectCard
-                  key={item.id}
+                  key={item.id} // for list items. each list item should have a key
                   title={item.title}
                   description={item.description}
-                  image={item.image ?? ""}
+                  image={item.image == "" || !item.image ? "null" : item.image}
                 />
               ) : (
                 <div key={item.id} className="job-card">
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
                   <div className="tags">
-                    {(item.tags ?? []).map((tag) => (
+                    {(item.keywords ?? []).map((tag) => (
                       <span key={tag} className="tag">
                         {tag}
                       </span>

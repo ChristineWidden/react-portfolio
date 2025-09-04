@@ -3,14 +3,27 @@
     position: relative;
     width: 300px;
     height: 200px;
-    background-color: #222;
+    /* background-color: #222; */
     color: white;
     overflow: hidden;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s;
+    border: 3px solid white;
 }
-    
+
+.project-overlay h3 {   
+    text-shadow: 0 1px 5px black, 0 1px 8px black, 0 1px 8px black, 0 1px 10px black, 0 1px 3px black;
+}
+
+.project-overlay p {
+    transition: opacity 0.3s ease;
+}
+
+.project-overlay:hover p {
+    opacity: 0;
+}
+
 .project-card:hover {
     transform: scale(1.02);
 }
@@ -19,6 +32,7 @@
     position: absolute;
     padding: 1rem;
     z-index: 2;
+    transition: opacity 0.3s ease;
 }
 
 .project-image {
@@ -34,5 +48,5 @@
 }
 
 .project-card:hover .project-image {
-    opacity: 0.6;
+    opacity: 1;
 }

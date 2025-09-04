@@ -1,6 +1,6 @@
 export type Job = {
     title: string;
     description: string[];
-    tags: string[];
-    image: string;
+    keywords: string[];
+    id: string;
 };

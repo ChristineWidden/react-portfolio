@@ -1,6 +1,6 @@
 export type Project = {
     name: string;
     desc: string[];
-    tags: string[];
-    image: string;
+    keywords: string[];
+    id: string;
 };

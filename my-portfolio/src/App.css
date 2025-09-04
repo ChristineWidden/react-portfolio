@@ -1,4 +1,14 @@
 /* App.css */
+
+body {
+  background-image: linear-gradient(black, rgb(25, 0, 78));
+  color: white;
+}
+
+.job-card {
+  color: black;
+}
+
 .navbar {
   display: flex;
   gap: 1rem;

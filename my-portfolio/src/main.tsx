@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import App from './App';
+// import App from './App';
+import AppRoutes from './Routes';
 
 // React uses this file to inject your entire React app into the actual HTML page.
 // This tells React: “Take the <App /> component and put it inside the <div id="root"> in index.html.”
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <AppRoutes />
     </BrowserRouter>
   </React.StrictMode>
 );
