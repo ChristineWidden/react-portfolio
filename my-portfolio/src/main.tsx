@@ -8,7 +8,7 @@ import AppRoutes from './Routes';
 // This tells React: “Take the <App /> component and put it inside the <div id="root"> in index.html.”
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/react-portfolio/my-portfolio">
       <AppRoutes />
     </BrowserRouter>
   </React.StrictMode>
