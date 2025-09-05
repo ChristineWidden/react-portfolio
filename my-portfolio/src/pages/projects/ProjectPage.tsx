@@ -15,7 +15,7 @@ function ProjectPage() {
     return (
         <div className="project-page">
             <h1>{project.name}</h1>
-            <img className="project-page-image" 
+            <img className="project-page-image"
                 src={`${import.meta.env.BASE_URL}images/${project.id}.png`}
                 alt={project.name} />
             <p>{project.desc}</p>
