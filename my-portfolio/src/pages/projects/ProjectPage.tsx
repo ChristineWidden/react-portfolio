@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
-import resumeData from "../../../public/resumeData.json";
+// import resumeData from "../../../public/resumeData.json";
+import resumeData from '../../resumeData.json';
 import projectDetails from "./details";
 
 function ProjectPage() {
@@ -14,7 +15,9 @@ function ProjectPage() {
     return (
         <div className="project-page">
             <h1>{project.name}</h1>
-            <img className="project-page-image" src={`/images/${project.id}.png`} alt={project.name} />
+            <img className="project-page-image" 
+                src={`${import.meta.env.BASE_URL}images/${project.id}.png`}
+                alt={project.name} />
             <p>{project.desc}</p>
 
             {/* Render extra manual content if it exists */}

@@ -17,7 +17,7 @@ function AppRoutes() {
             <Route path="/contact" element={<Contacts />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/:slug" element={<ProjectPage />} />
-            <Route path="*" element={<h2>Page not found</h2>} />
+            <Route path="*" element={<h2>Page not found!</h2>} />
         </Routes>
     );
 }

@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
+import resumeData from './resumeData.json';
+
 import ProjectCard from "./components/ProjectCard";
 
 import type { Project } from "./types/Project";
@@ -16,16 +18,19 @@ function App() {
   const [jobs, setJobs] = useState<Job[]>([]);
 
   // Load projects and stuff from JSON
+  // useEffect(() => {
+  //   fetch("/resumeData.json")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setProjects(data.projects || []);
+  //       setJobs(data.work_experience || []);
+  //     })
+  //     .catch((err) => console.error("Failed to load resume data:", err));
+  // }, []);
   useEffect(() => {
-    fetch("/resumeData.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setProjects(data.projects || []);
-        setJobs(data.work_experience || []);
-      })
-      .catch((err) => console.error("Failed to load resume data:", err));
+    setProjects(resumeData.projects || []);
+    setJobs(resumeData.work_experience || []);
   }, []);
-
 
   // Merge both into a single item list for filtering
   const allItems: Item[] = [
