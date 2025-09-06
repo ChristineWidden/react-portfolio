@@ -4,11 +4,14 @@ import { BrowserRouter } from 'react-router-dom';
 // import App from './App';
 import AppRoutes from './Routes';
 
+const basename = import.meta.env.BASE_URL;
+// const basename = import.meta.env.DEV ? "/" : "/react-portfolio/";
+
 // React uses this file to inject your entire React app into the actual HTML page.
 // This tells React: “Take the <App /> component and put it inside the <div id="root"> in index.html.”
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter basename="/react-portfolio/">
+    <BrowserRouter basename={basename}>
       <AppRoutes />
     </BrowserRouter>
   </React.StrictMode>

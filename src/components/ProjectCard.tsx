@@ -14,7 +14,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image }) 
                 <h3>{title}</h3>
                 <p>{description}</p>
             </div>
-            <img className="project-image" src={`/images/${image}.png`} alt={title} />
+            <img className="project-image" 
+            src={`${import.meta.env.BASE_URL}images/${image}.png`}
+            alt={title} />
         </Link>
     );
 };
