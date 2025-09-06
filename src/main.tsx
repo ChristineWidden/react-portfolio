@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 // import App from './App';
 import AppRoutes from './Routes';
 import Navbar from './components/Navbar';
@@ -13,11 +13,11 @@ const basename = import.meta.env.BASE_URL;
 // This tells React: “Take the <App /> component and put it inside the <div id="root"> in index.html.”
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter basename={basename}>
+    <HashRouter basename={basename}>
       <Navbar />
       <AppRoutes />
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
 // Why BrowserRouter?

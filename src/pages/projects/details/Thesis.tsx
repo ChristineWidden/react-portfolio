@@ -1,4 +1,11 @@
 import "./thesis.css"
+import { HashLink } from "react-router-hash-link";
+
+// TODO improve formatting
+// TODO add missing sections
+// TODO add citations
+// TODO add a table of contents
+// TODO add figure numbers
 
 export default function MSThesis() {
     return (
@@ -12,7 +19,43 @@ export default function MSThesis() {
             <p>
                 While video game accessibility is a growing research topic, few studies investigate how players perceive the presence versus the absence of accessibility features, or how non-disabled players react to the option of accessibility features. This study explores these research gaps, investigating how access to accessibility features affects the experience of both disabled and non-disabled players. For the purposes of this study, a small platformer game was developed with as many accessibility features as feasible for the scope of the project. An A vs.\ B study was conducted in the game, with anonymous participants randomly assigned to version A, with all acceptability features enabled, or version B, which had most features disabled. Overall reception to the features was primarily positive in both groups. A small portion of non-disabled players made use of the accessibility features. Most disabled players assigned to Version A used the accessibility features. Non-disabled players were primarily indifferent to the accessibility features, but some found them helpful or liked them even if they did not need them. Though strong conclusions are difficult to draw without more data, overall accessibility features are significantly desired by disabled players, and found to be useful and received positively by some non-disabled players. Further research is needed, but results show potential that including accessibility features can positively influence audience reception.
             </p>
-
+            <br></br>
+            <div className="information">
+                <p>COMMITTEE MEMBERSHIP</p>
+                <p>TITLE: The Impact of Accessibility Features on Player Ex-perience in Video Games</p>
+                <p>AUTHOR: Christine Widden</p>
+                <p>DATE SUBMITTED: June 2025</p>
+                <p>COMMITTEE CHAIR: April Grow, Ph.D.</p>
+                <p>Professor of Computer Science</p>
+                <p>COMMITTEE MEMBER: Stephen R. Beard, Ph.D.</p>
+                <p>Professor of Computer Science</p>
+                <p>COMMITTEE MEMBER: Michael Haungs, Ph.D.</p>
+                <p>Professor of Computer Science</p>
+            </div>
+            <br></br>
+            <div className="acknowledgments">
+                <p>Thanks to:</p>
+                <ul>
+                    <li><p>Dr. Grow, for being an amazing advisor and professor, inspiring
+                        and guiding me this whole way</p></li>
+                    <li><p>Lucia Greco, for some great advice and insight on game
+                        accessibility</p></li>
+                    <li><p>Diana Koralski, for helping me develop the original game</p></li>
+                    <li><p>Anokolisa on itch.io, for creating the tileset used for the
+                        game’s terrain</p></li>
+                    <li><p>Kevin MacLeod, for composing the music used in the game</p></li>
+                    <li><p>Andrew Guenther, for uploading the original thesis
+                        template</p></li>
+                </ul>
+                <p>And...</p>
+                <ul>
+                    <li><p>To my cousin AJ, for being a good gaming buddy.</p></li>
+                    <li><p>To my parents, for always pushing me forward.</p></li>
+                    <li><p>To Auntie Anna, for being awesome.</p></li>
+                    <li><p>To Technoblade, for showing me that a love of video games can be
+                        an incredible source of good in the world.</p></li>
+                </ul>
+            </div>
 
             <h1 id="sec:IntroBackground">Introduction and Background</h1>
             <p>Over the past few decades, video games have risen from a niche hobby
@@ -99,8 +142,8 @@ export default function MSThesis() {
                 turn off the music and enable environmental cues to let them navigate.
                 Someone with motor difficulties may be able to play any game so long as
                 they can remap the controls to different buttons or a different
-                controller entirely. As seen in Figure <a href="#fig:cdc-stats" data-reference-type="ref"
-                    data-reference="fig:cdc-stats">1.1</a>,
+                controller entirely. As seen in Figure <HashLink to="#fig:cdc-stats" data-reference-type="ref"
+                    data-reference="fig:cdc-stats">1.1</HashLink>,
                 disabilities are quite common, with 13.9% of Americans having a
                 cognitive disability, for example, so inaccessibility excludes quite a
                 lot of potential players <span className="citation" data-cites="cdcinfographic"></span>.
@@ -163,7 +206,7 @@ export default function MSThesis() {
                 experience playing video games. Additionally, high contrast mode may
                 also be appreciated by many players, as impaired vision is a common
                 disability. The specifics of each of these features are further
-                discussed in Section <a href="#features" data-reference-type="ref" data-reference="features">[features]</a>.</p>
+                discussed in Section <HashLink to="#features" data-reference-type="ref" data-reference="features">[features]</HashLink>.</p>
             <h2 id="sec:ScopeLimitations">Scope and Limitations</h2>
             <p>The primary focus of this study is to investigate how accessibility
                 features impact the reception of a video game among a general American
@@ -182,8 +225,8 @@ export default function MSThesis() {
                 designed for deaf players, as the game was intended to be fully playable
                 without audio, but did include features designed to help players with
                 visual, cognitive, and motor disabilities. However, as further discussed
-                in Section <a href="#ResultsReflections" data-reference-type="ref"
-                    data-reference="ResultsReflections">[ResultsReflections]</a>, features
+                in Section <HashLink to="#ResultsReflections" data-reference-type="ref"
+                    data-reference="ResultsReflections">[ResultsReflections]</HashLink>, features
                 such as captions for sound effects would have been beneficial
                 additions.</p>
 
@@ -394,7 +437,7 @@ export default function MSThesis() {
                 which games can be evaluated by going through the list of guidelines and
                 suggested features and seeing which of them a game fulfills. This paper
                 utilized the <em>Game Accessibility Guidelines</em>, as elaborated upon
-                further in Section <a href="#features" data-reference-type="ref" data-reference="features">[features]</a>.</p>
+                further in Section <HashLink to="#features" data-reference-type="ref" data-reference="features">[features]</HashLink>.</p>
             <p>There are various methods by which accessibility can be evaluated.
                 One method, such as was done in the <em>Level-Up!</em> study, is to
                 compare the scores of disabled players with and without accessibility
@@ -529,8 +572,8 @@ export default function MSThesis() {
             <p>The game has 8 accessibility features available in both Version A and
                 Version B:</p>
             <h5 id="control-remapping">Control Remapping</h5>
-            <p>The control remapping menu is shown in Figure <a href="#fig:controls-menu" data-reference-type="ref"
-                data-reference="fig:controls-menu">1.1</a>. Players can remap any button
+            <p>The control remapping menu is shown in Figure <HashLink to="#fig:controls-menu" data-reference-type="ref"
+                data-reference="fig:controls-menu">1.1</HashLink>. Players can remap any button
                 used to control the game and menus as they like, allowing for different
                 keyboard configurations to be used according to each player’s comfort.
                 This is intended to help players with motor disabilities, but should
@@ -544,8 +587,8 @@ export default function MSThesis() {
             </figure>
             <h5 id="volume-controls">Volume Controls</h5>
             <p>Separate volume controls for music, sound effects, audio-based
-                navigation, and narration are available, as shown in Figure <a href="#fig:audio-menu" data-reference-type="ref"
-                    data-reference="fig:audio-menu">1.2</a>, though the latter two are only
+                navigation, and narration are available, as shown in Figure <HashLink to="#fig:audio-menu" data-reference-type="ref"
+                    data-reference="fig:audio-menu">1.2</HashLink>, though the latter two are only
                 visible in Version A. This is intended to be helpful for players with
                 cognitive disabilities, who may find too many sound effects
                 overwhelming, or certain sound effects to be too loud, and players with
@@ -592,8 +635,8 @@ export default function MSThesis() {
             <p>The first level for all players was a tutorial level. This level
                 introduced the core mechanics, such as the controls and the behavior of
                 each of the three projectiles. The start of the tutorial level is
-                pictured in Figure <a href="#fig:high-contrast" data-reference-type="ref"
-                    data-reference="fig:high-contrast">1.4</a>.</p>
+                pictured in Figure <HashLink to="#fig:high-contrast" data-reference-type="ref"
+                    data-reference="fig:high-contrast">1.4</HashLink>.</p>
             <h3 id="experimental-accessibility-features">Experimental Accessibility
                 Features</h3>
             <figure>
@@ -601,15 +644,15 @@ export default function MSThesis() {
                 <figcaption aria-hidden="true">The accessibility menu</figcaption>
             </figure>
             <p>The game has 11 different accessibility options available in a
-                dedicated Accessibility menu, pictured in Figure <a href="#fig:accessibility-menu" data-reference-type="ref"
-                    data-reference="fig:accessibility-menu">1.3</a>. This menu and the
+                dedicated Accessibility menu, pictured in Figure <HashLink to="#fig:accessibility-menu" data-reference-type="ref"
+                    data-reference="fig:accessibility-menu">1.3</HashLink>. This menu and the
                 associated features are hidden in Version B. As each feature is selected
                 or hovered over, a description of what it does is displayed on the
                 right-hand side.</p>
             <h5 id="high-contrast">High Contrast</h5>
             <p>High-contrast, emphasizing enemies and the player with bright colors
-                while dulling and darkening the background, is shown in Figure <a href="#fig:high-contrast"
-                    data-reference-type="ref" data-reference="fig:high-contrast">1.4</a>. It is intended to help
+                while dulling and darkening the background, is shown in Figure <HashLink to="#fig:high-contrast"
+                    data-reference-type="ref" data-reference="fig:high-contrast">1.4</HashLink>. It is intended to help
                 players with vision disabilities, such as color blindness or blurry
                 vision.</p>
             <figure>
@@ -621,8 +664,8 @@ export default function MSThesis() {
             <h5 id="auto-fire">Auto Fire</h5>
             <p>Rather than continuously firing projectiles, Auto Fire automatically
                 fires projectiles if an enemy is directly ahead. The functionality
-                behind this mechanic is shown in Figure <a href="#fig:ray-trace-hitbox" data-reference-type="ref"
-                    data-reference="fig:ray-trace-hitbox">1.5</a>.
+                behind this mechanic is shown in Figure <HashLink to="#fig:ray-trace-hitbox" data-reference-type="ref"
+                    data-reference="fig:ray-trace-hitbox">1.5</HashLink>.
                 This feature, compared to Auto Throw, is meant to cause less visual
                 clutter due to unnecessary projectiles, and have higher accuracy for
                 hitting enemies. This is intended primarily to help players with motor
@@ -646,7 +689,7 @@ export default function MSThesis() {
             <p>Enabling Auto Jump causes the goblin to automatically jump at any
                 spots where jumping is necessary to progress, such as at stairs or at
                 the edge of pits. The functionality behind this mechanic is shown in
-                Figure <a href="#fig:auto-jump-tiles" data-reference-type="ref" data-reference="fig:auto-jump-tiles">1.6</a>.
+                Figure <HashLink to="#fig:auto-jump-tiles" data-reference-type="ref" data-reference="fig:auto-jump-tiles">1.6</HashLink>.
                 This is intended to help
                 players with motor disabilities, ideally allowing them to focus on
                 horizontal movement only.</p>
@@ -663,9 +706,9 @@ export default function MSThesis() {
                     data-cites="mariokart8"></span>. This is intended to
                 help players with Motor disabilities, who may have more difficulty
                 timing jumps over pits, or reacting in time to avoid running into them.
-                This feature is shown in figures <a href="#fig:edge-guard-on" data-reference-type="ref"
-                    data-reference="fig:edge-guard-on">1.7</a> and
-                <a href="#fig:edge-guard-off" data-reference-type="ref" data-reference="fig:edge-guard-off">1.8</a>.
+                This feature is shown in figures <HashLink to="#fig:edge-guard-on" data-reference-type="ref"
+                    data-reference="fig:edge-guard-on">1.7</HashLink> and
+                <HashLink to="#fig:edge-guard-off" data-reference-type="ref" data-reference="fig:edge-guard-off">1.8</HashLink>.
             </p>
             <figure>
                 <img src={`${import.meta.env.BASE_URL}images/thesis_figures/PitEdgeGuard.png`} id="fig:edge-guard-on" alt="A pit with Edge Guard enabled" />
@@ -682,8 +725,8 @@ export default function MSThesis() {
                 white outlines, intended to make them slightly easier to see. This
                 setting works well with the high contrast setting, allowing the player
                 and guards to stand out even more. This feature is intended to help
-                players with vision disabilities. Outlines are shown in Figure <a href="#fig:outlines" data-reference-type="ref"
-                    data-reference="fig:outlines">1.9</a>.</p>
+                players with vision disabilities. Outlines are shown in Figure <HashLink to="#fig:outlines" data-reference-type="ref"
+                    data-reference="fig:outlines">1.9</HashLink>.</p>
             <figure>
                 <img src={`${import.meta.env.BASE_URL}images/thesis_figures/outlines.png`} id="fig:outlines" alt="The goblin and guards with outlines enabled" />
                 <figcaption aria-hidden="true">The goblin and guards with outlines
@@ -697,7 +740,7 @@ export default function MSThesis() {
                 disabilities. A dedicated circular collider attached to the goblin was
                 used to detect the distance from markers placed at the edges of pits to
                 trigger the noise. The functionality behind this mechanic is shown in
-                Figure <a href="#fig:pit-markers" data-reference-type="ref" data-reference="fig:pit-markers">1.10</a>.</p>
+                Figure <HashLink to="#fig:pit-markers" data-reference-type="ref" data-reference="fig:pit-markers">1.10</HashLink>.</p>
             <figure>
                 <img src={`${import.meta.env.BASE_URL}images/thesis_figures/PitMarkers.png`} id="fig:pit-markers"
                     alt="The circular collider detects the pit markers (shown here as gray rectangles), enabling the wind noise" />
@@ -707,8 +750,8 @@ export default function MSThesis() {
             </figure>
             <h5 id="alt-health">Alt Health</h5>
             <p>Enabling Alt Health moves the health meter from the top left corner
-                of the screen to above the head of the goblin, as pictured in Figure <a href="#fig:alt-health"
-                    data-reference-type="ref" data-reference="fig:alt-health">1.11</a>. This is to allow players who
+                of the screen to above the head of the goblin, as pictured in Figure <HashLink to="#fig:alt-health"
+                    data-reference-type="ref" data-reference="fig:alt-health">1.11</HashLink>. This is to allow players who
                 may struggle to see or notice things in their peripheral vision to more
                 easily track their health. This is primarily intended to help players
                 with vision disabilities.</p>
@@ -814,8 +857,8 @@ export default function MSThesis() {
                 personal identifying information was requested, such name, specific age,
                 birthday, location, or contact information.</p>
             <p>Some parts of the responses were excluded in specific cases as
-                discussed in Chapter <a href="#chap:ResultsAnalysisDiscussion" data-reference-type="ref"
-                    data-reference="chap:ResultsAnalysisDiscussion">[chap:ResultsAnalysisDiscussion]</a>.
+                discussed in Chapter <HashLink to="#chap:ResultsAnalysisDiscussion" data-reference-type="ref"
+                    data-reference="chap:ResultsAnalysisDiscussion">[chap:ResultsAnalysisDiscussion]</HashLink>.
                 Incomplete responses were not recorded.</p>
             <h2 id="data-collection-and-analysis">Data Collection and Analysis</h2>
             <p>Microsoft Forms was used to gather data. In the middle of the survey,
@@ -882,8 +925,8 @@ export default function MSThesis() {
                 allow for some interesting insights from how the Version B players
                 interpreted the Version A questions.</p>
             <p>Additionally, some questions could have been worded better. This is
-                discussed in more detail in Section <a href="#ResultsReflections" data-reference-type="ref"
-                    data-reference="ResultsReflections">[ResultsReflections]</a>.</p>
+                discussed in more detail in Section <HashLink to="#ResultsReflections" data-reference-type="ref"
+                    data-reference="ResultsReflections">[ResultsReflections]</HashLink>.</p>
             <p>These limitations do not invalidate the results, but they do limit
                 how broadly the findings can be generalized.</p>
 
@@ -896,8 +939,8 @@ export default function MSThesis() {
                 this issue was salvageable, but for some questions, very little usable
                 data remains.</p>
             <h2 id="participant-overview">Participant Overview <span id="ParticipantOverview"></span></h2>
-            <p>Participant recruitment is discussed in detail in Section <a href="#recruiting" data-reference-type="ref"
-                data-reference="recruiting">[recruiting]</a>.</p>
+            <p>Participant recruitment is discussed in detail in Section <HashLink to="#recruiting" data-reference-type="ref"
+                data-reference="recruiting">[recruiting]</HashLink>.</p>
             <p>In total, 52 participants completed the survey. Of these
                 participants, 2 were minors accompanied by guardians, and 50 were
                 adults.</p>
@@ -916,8 +959,8 @@ export default function MSThesis() {
                 methods, the vast majority of respondents were adults. While there were
                 two responses stated to be a minor and adult pair, there was only one
                 under-18 response to this question. The distribution of participant ages
-                is shown in Figure <a href="#fig:age-distribution" data-reference-type="ref"
-                    data-reference="fig:age-distribution">1.1</a>.</p>
+                is shown in Figure <HashLink to="#fig:age-distribution" data-reference-type="ref"
+                    data-reference="fig:age-distribution">1.1</HashLink>.</p>
             <h3 id="disability-status">Disability Status</h3>
             <p>“Do you have any disabilities?”</p>
             <figure>
@@ -930,8 +973,8 @@ export default function MSThesis() {
                 personal reasons. Due to this, for the question “Do you have any
                 disabilities?” the definition of the word “disability” was intentionally
                 left unspecified, instead leaving interpretation up to respondents. The
-                distribution of responses to this question is shown in Figure <a href="#fig:disability-pie"
-                    data-reference-type="ref" data-reference="fig:disability-pie">1.2</a>.</p>
+                distribution of responses to this question is shown in Figure <HashLink to="#fig:disability-pie"
+                    data-reference-type="ref" data-reference="fig:disability-pie">1.2</HashLink>.</p>
             <p>This question was required. The majority of responses were no. The
                 two “other” respondents were unsure if allergies and asthma, and ADHD,
                 counted as disabilities. In terms of how each relates to playing video
@@ -996,8 +1039,8 @@ export default function MSThesis() {
                 represented disability category was “Cognitive”. The second most common
                 disability type was vision, perhaps due to the high likelihood of vision
                 degrading as people age. The number of responses for each category is
-                shown in Table <a href="#tab:disability-categories" data-reference-type="ref"
-                    data-reference="tab:disability-categories">1.1</a>.</p>
+                shown in Table <HashLink to="#tab:disability-categories" data-reference-type="ref"
+                    data-reference="tab:disability-categories">1.1</HashLink>.</p>
             <h3 id="impact-of-disability-on-gaming-experiences">Impact of Disability
                 on Gaming Experiences</h3>
             <p>“If you have any disabilities, have they affected your ability to
@@ -1013,16 +1056,16 @@ export default function MSThesis() {
                 enjoyment of video games in the past?” than people who identified as
                 disabled in the last two questions. It is possible that some respondents
                 did not notice that this question was optional, and thus responded
-                despite not identifying as disabled. The data in Figure <a href="#fig:disability-impact"
-                    data-reference-type="ref" data-reference="fig:disability-impact">1.3</a> has been filtered to only
+                despite not identifying as disabled. The data in Figure <HashLink to="#fig:disability-impact"
+                    data-reference-type="ref" data-reference="fig:disability-impact">1.3</HashLink> has been filtered to only
                 include participants who identified as disabled. After filtering, the
                 most common response was “Yes”, with one person selecting “Other” and
                 writing “Sometimes my deafness has made certain games that rely on
                 sounds more difficult.”. This seems to be an affirmative response. The
                 respondent who was unsure if their ADHD counted as a disability also
                 responded “Yes” to this question. The distribution of responses to this
-                question is shown in Figure <a href="#fig:disability-impact" data-reference-type="ref"
-                    data-reference="fig:disability-impact">1.3</a>.</p>
+                question is shown in Figure <HashLink to="#fig:disability-impact" data-reference-type="ref"
+                    data-reference="fig:disability-impact">1.3</HashLink>.</p>
             <h3 id="impact-of-disability-on-games-played">Impact of Disability on
                 Games Played</h3>
             <p>“Have there ever been video games that you would have liked to play
@@ -1039,8 +1082,8 @@ export default function MSThesis() {
                 of 29 people who identified as not disabled responded “Yes”, suggesting
                 that though they may not identify as disabled, there are some disability
                 features they find valuable enough to affect their game preferences. The
-                distribition of responses to this question is shown in figure  <a href="#fig:games-not-played"
-                    data-reference-type="ref" data-reference="fig:games-not-played">1.4</a>.</p>
+                distribition of responses to this question is shown in figure  <HashLink to="#fig:games-not-played"
+                    data-reference-type="ref" data-reference="fig:games-not-played">1.4</HashLink>.</p>
             <h2 id="quantitative-results">Quantitative Results<span id="QuantitativeResults"></span>
             </h2>
             <p>Overall, 28 people played Version A, and 24 played Version B.</p>
@@ -1048,8 +1091,8 @@ export default function MSThesis() {
             <p>“How much did you enjoy playing the game?”</p>
             <p>After playing the game, respondents were asked “How much did you
                 enjoy playing the game?” and prompted to rate the game on a scale
-                between 0 (not at all) and 10 (I loved it!). Figure <a href="#fig:enjoyment-ratings-comparison"
-                    data-reference-type="ref" data-reference="fig:enjoyment-ratings-comparison">1.5</a> shows the
+                between 0 (not at all) and 10 (I loved it!). Figure <HashLink to="#fig:enjoyment-ratings-comparison"
+                    data-reference-type="ref" data-reference="fig:enjoyment-ratings-comparison">1.5</HashLink> shows the
                 distribution of ratings for Version A and Version B.</p>
             <p>The average score for Version A was approximately 5.75, while the
                 average score for Version B was approximately 6.63.</p>
@@ -1130,7 +1173,7 @@ export default function MSThesis() {
                 minutes, and none played for longer than 10 minutes. It is not possible
                 to calculate an average for playtime, as playtime data was only
                 collected in ranges. The number of responses for each range by version
-                is shown in Table <a href="#tab:playtime" data-reference-type="ref" data-reference="tab:playtime">1.2</a>.</p>
+                is shown in Table <HashLink to="#tab:playtime" data-reference-type="ref" data-reference="tab:playtime">1.2</HashLink>.</p>
             <h5 id="discussion-1">Discussion</h5>
             <p>The longer playtime for Version A could potentially indicate that
                 players found Version A to be more engaging. Alternatively, players may
@@ -1319,8 +1362,8 @@ export default function MSThesis() {
                 </table>
             </div>
             <p>The total number of mentions for each feature by disability group are
-                shown in Table <a href="#tab:feature-mentions-total" data-reference-type="ref"
-                    data-reference="tab:feature-mentions-total">1.3</a>.</p>
+                shown in Table <HashLink to="#tab:feature-mentions-total" data-reference-type="ref"
+                    data-reference="tab:feature-mentions-total">1.3</HashLink>.</p>
             <p>No features were mentioned by the two people who filled custom
                 responses to the “Do you have any disabilities?” question.</p>
             <p>These results were drawn both from the answers to this question from
@@ -1361,8 +1404,8 @@ export default function MSThesis() {
                 Large UI, Menu Button Navigation, Color Design, and Tutorial, this is
                 likely due to the fact that these features are not ones that must be
                 enabled, but rather ones that are on by default. Though, as said in
-                Section <a href="#versionBfeatures" data-reference-type="ref"
-                    data-reference="versionBfeatures">[versionBfeatures]</a>, one player
+                Section <HashLink to="#versionBfeatures" data-reference-type="ref"
+                    data-reference="versionBfeatures">[versionBfeatures]</HashLink>, one player
                 later mentions that the color scheme was accessible for them as a
                 colorblind person. The lack of mention of menu-based button navigation
                 could also be due to the lack of explicit instruction that such an
@@ -1394,8 +1437,8 @@ export default function MSThesis() {
                 <figcaption aria-hidden="true">Perceived Sufficiency of Accessibility
                     Features (Version A) as Percentage of Disability Group</figcaption>
             </figure>
-            <p>The results to this question shown in Figure <a href="#fig:accessibility-good-enough-percent"
-                data-reference-type="ref" data-reference="fig:accessibility-good-enough-percent">1.9</a> have been
+            <p>The results to this question shown in Figure <HashLink to="#fig:accessibility-good-enough-percent"
+                data-reference-type="ref" data-reference="fig:accessibility-good-enough-percent">1.9</HashLink> have been
                 filtered to only include responses from players who played Version A, as
                 this was one of the questions affected by the survey error.</p>
             <p>Nearly all of the “Other” responses were people saying “n/a” or some
@@ -1442,13 +1485,13 @@ export default function MSThesis() {
             </figure>
             <h4 id="what-if-version-a-had-no-accessibility-features">What if Version
                 A had no accessibility features?</h4>
-            <p>The charts in Figure <a href="#fig:feature-preference" data-reference-type="ref"
-                data-reference="fig:feature-preference">1.10</a> showcasing the
+            <p>The charts in Figure <HashLink to="#fig:feature-preference" data-reference-type="ref"
+                data-reference="fig:feature-preference">1.10</HashLink> showcasing the
                 responses to this question only exclude responses for the corresponding
                 versions. Data for the question “Would you have liked this game less
                 without the accessibility features?” that includes the Version B
-                responses can be found in Table  <a href="#tab:liked-game-less-AB" data-reference-type="ref"
-                    data-reference="tab:liked-game-less-AB">[tab:liked-game-less-AB]</a> in
+                responses can be found in Table  <HashLink to="#tab:liked-game-less-AB" data-reference-type="ref"
+                    data-reference="tab:liked-game-less-AB">[tab:liked-game-less-AB]</HashLink> in
                 the Appendix.</p>
             <p>The first question received 4 custom responses, 2 for Version A and 2
                 for Version B.</p>
@@ -1568,8 +1611,8 @@ export default function MSThesis() {
                 players.</p>
             <p>“It would be nice if the text could be read out loud.”</p>
             <p>This response makes me wonder if there was a lack of clarity in some
-                way about the Narration feature (discussed in in Section <a href="#features" data-reference-type="ref"
-                    data-reference="features">[features]</a>), or perhaps a bug that
+                way about the Narration feature (discussed in in Section <HashLink to="#features" data-reference-type="ref"
+                    data-reference="features">[features]</HashLink>), or perhaps a bug that
                 prevented it from working.</p>
             <p>“Scaling.”</p>
             <p>Scalable UI was a feature that was partially implemented, but
@@ -1621,7 +1664,7 @@ export default function MSThesis() {
             <p>One player mentioned that they have struggled with platformers in the
                 past, but seemed to be helped by the available accessibility
                 features.</p>
-            <p>As mentioned in Section <a href="#features" data-reference-type="ref" data-reference="features">[features]</a>,
+            <p>As mentioned in Section <HashLink to="#features" data-reference-type="ref" data-reference="features">[features]</HashLink>,
                 the Narration feature was
                 intended to make text more accessible. However, one player with a
                 vision-related disability seemed to have been unable to find or activate
@@ -1812,11 +1855,11 @@ export default function MSThesis() {
                 possible responses, but a checklist of each feature would reduce the
                 risk of specific features being forgotten.</p>
             <p>The limitations presented by the methodology were discussed in more
-                detail in Section <a href="#methodologylimitations" data-reference-type="ref"
-                    data-reference="methodologylimitations">[methodologylimitations]</a>,
+                detail in Section <HashLink to="#methodologylimitations" data-reference-type="ref"
+                    data-reference="methodologylimitations">[methodologylimitations]</HashLink>,
                 and reflections on beneficial changes to the approach after results were
-                collected are discussed in Section <a href="#ResultsReflections" data-reference-type="ref"
-                    data-reference="ResultsReflections">[ResultsReflections]</a>.</p>
+                collected are discussed in Section <HashLink to="#ResultsReflections" data-reference-type="ref"
+                    data-reference="ResultsReflections">[ResultsReflections]</HashLink>.</p>
             <h2 id="final-thoughts">Final Thoughts</h2>
             <p>Overall, though this study was not perfect, and there are many things
                 I wish I’d done differently, I am very proud of my contributions to
@@ -1958,42 +2001,42 @@ export default function MSThesis() {
                     <caption>Responses to the question “How old are you?”</caption>
                     <thead>
                         <tr className="header">
-                            <th style={{ textAlign: "left"}}><strong>Age Range</strong></th>
-                            <th style={{ textAlign: "center"}}><strong>Count (%)</strong></th>
+                            <th style={{ textAlign: "left" }}><strong>Age Range</strong></th>
+                            <th style={{ textAlign: "center" }}><strong>Count (%)</strong></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}>Under 18</td>
-                            <td style={{ textAlign: "center"}}>1 (1.9%)</td>
+                            <td style={{ textAlign: "left" }}>Under 18</td>
+                            <td style={{ textAlign: "center" }}>1 (1.9%)</td>
                         </tr>
                         <tr className="even">
-                            <td style={{ textAlign: "left"}}>18-24</td>
-                            <td style={{ textAlign: "center"}}>33 (63.5%)</td>
+                            <td style={{ textAlign: "left" }}>18-24</td>
+                            <td style={{ textAlign: "center" }}>33 (63.5%)</td>
                         </tr>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}>25-34</td>
-                            <td style={{ textAlign: "center"}}>6 (11.5%)</td>
+                            <td style={{ textAlign: "left" }}>25-34</td>
+                            <td style={{ textAlign: "center" }}>6 (11.5%)</td>
                         </tr>
                         <tr className="even">
-                            <td style={{ textAlign: "left"}}>35-44</td>
-                            <td style={{ textAlign: "center"}}>1 (1.9%)</td>
+                            <td style={{ textAlign: "left" }}>35-44</td>
+                            <td style={{ textAlign: "center" }}>1 (1.9%)</td>
                         </tr>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}>45-54</td>
-                            <td style={{ textAlign: "center"}}>10 (19.2%)</td>
+                            <td style={{ textAlign: "left" }}>45-54</td>
+                            <td style={{ textAlign: "center" }}>10 (19.2%)</td>
                         </tr>
                         <tr className="even">
-                            <td style={{ textAlign: "left"}}>55-60</td>
-                            <td style={{ textAlign: "center"}}>1 (1.9%)</td>
+                            <td style={{ textAlign: "left" }}>55-60</td>
+                            <td style={{ textAlign: "center" }}>1 (1.9%)</td>
                         </tr>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}>60+</td>
-                            <td style={{ textAlign: "center"}}>0 (0%)</td>
+                            <td style={{ textAlign: "left" }}>60+</td>
+                            <td style={{ textAlign: "center" }}>0 (0%)</td>
                         </tr>
                         <tr className="even">
-                            <td style={{ textAlign: "left"}}><strong>Total Respondents</strong></td>
-                            <td style={{ textAlign: "center"}}>52</td>
+                            <td style={{ textAlign: "left" }}><strong>Total Respondents</strong></td>
+                            <td style={{ textAlign: "center" }}>52</td>
                         </tr>
                     </tbody>
                 </table>
@@ -2004,26 +2047,26 @@ export default function MSThesis() {
                         disabilities?”</caption>
                     <thead>
                         <tr className="header">
-                            <th style={{ textAlign: "left"}}><strong>Response</strong></th>
-                            <th style={{ textAlign: "center"}}><strong>Count (%)</strong></th>
+                            <th style={{ textAlign: "left" }}><strong>Response</strong></th>
+                            <th style={{ textAlign: "center" }}><strong>Count (%)</strong></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}>Yes</td>
-                            <td style={{ textAlign: "center"}}>12 (23.1%)</td>
+                            <td style={{ textAlign: "left" }}>Yes</td>
+                            <td style={{ textAlign: "center" }}>12 (23.1%)</td>
                         </tr>
                         <tr className="even">
-                            <td style={{ textAlign: "left"}}>No</td>
-                            <td style={{ textAlign: "center"}}>38 (73.1%)</td>
+                            <td style={{ textAlign: "left" }}>No</td>
+                            <td style={{ textAlign: "center" }}>38 (73.1%)</td>
                         </tr>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}>Other (Fill in own response)</td>
-                            <td style={{ textAlign: "center"}}>2 (3.8%)</td>
+                            <td style={{ textAlign: "left" }}>Other (Fill in own response)</td>
+                            <td style={{ textAlign: "center" }}>2 (3.8%)</td>
                         </tr>
                         <tr className="even">
-                            <td style={{ textAlign: "left"}}><strong>Total Respondents</strong></td>
-                            <td style={{ textAlign: "center"}}>52</td>
+                            <td style={{ textAlign: "left" }}><strong>Total Respondents</strong></td>
+                            <td style={{ textAlign: "center" }}>52</td>
                         </tr>
                     </tbody>
                 </table>
@@ -2035,27 +2078,27 @@ export default function MSThesis() {
                         games in the past?”</caption>
                     <thead>
                         <tr className="header">
-                            <th style={{ textAlign: "left"}}><strong>Response</strong></th>
-                            <th style={{ textAlign: "center"}}><strong>Count (% of total
+                            <th style={{ textAlign: "left" }}><strong>Response</strong></th>
+                            <th style={{ textAlign: "center" }}><strong>Count (% of total
                                 responses)</strong></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}>Yes</td>
-                            <td style={{ textAlign: "center"}}>8 (28.6%)</td>
+                            <td style={{ textAlign: "left" }}>Yes</td>
+                            <td style={{ textAlign: "center" }}>8 (28.6%)</td>
                         </tr>
                         <tr className="even">
-                            <td style={{ textAlign: "left"}}>No</td>
-                            <td style={{ textAlign: "center"}}>19 (67.9%)</td>
+                            <td style={{ textAlign: "left" }}>No</td>
+                            <td style={{ textAlign: "center" }}>19 (67.9%)</td>
                         </tr>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}>Other (Fill in own response)</td>
-                            <td style={{ textAlign: "center"}}>1 (3.6%)</td>
+                            <td style={{ textAlign: "left" }}>Other (Fill in own response)</td>
+                            <td style={{ textAlign: "center" }}>1 (3.6%)</td>
                         </tr>
                         <tr className="even">
-                            <td style={{ textAlign: "left"}}><strong>Total Respondents</strong></td>
-                            <td style={{ textAlign: "center"}}>28</td>
+                            <td style={{ textAlign: "left" }}><strong>Total Respondents</strong></td>
+                            <td style={{ textAlign: "center" }}>28</td>
                         </tr>
                     </tbody>
                 </table>
@@ -2066,42 +2109,42 @@ export default function MSThesis() {
                         game?” on a scale from 0 (Not at all) to 10 (I loved it!)</caption>
                     <thead>
                         <tr className="header">
-                            <th style={{ textAlign: "left"}}><strong>Rating (0–10)</strong></th>
-                            <th style={{ textAlign: "center"}}><strong>Version A (n=X)</strong></th>
-                            <th style={{ textAlign: "center"}}><strong>Version B (n=Y)</strong></th>
-                            <th style={{ textAlign: "center"}}><strong>Total (%)</strong></th>
+                            <th style={{ textAlign: "left" }}><strong>Rating (0–10)</strong></th>
+                            <th style={{ textAlign: "center" }}><strong>Version A (n=X)</strong></th>
+                            <th style={{ textAlign: "center" }}><strong>Version B (n=Y)</strong></th>
+                            <th style={{ textAlign: "center" }}><strong>Total (%)</strong></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}>0–2 (Low Enjoyment)</td>
-                            <td style={{ textAlign: "center"}}>4</td>
-                            <td style={{ textAlign: "center"}}>2</td>
-                            <td style={{ textAlign: "center"}}>6 (11.5%)</td>
+                            <td style={{ textAlign: "left" }}>0–2 (Low Enjoyment)</td>
+                            <td style={{ textAlign: "center" }}>4</td>
+                            <td style={{ textAlign: "center" }}>2</td>
+                            <td style={{ textAlign: "center" }}>6 (11.5%)</td>
                         </tr>
                         <tr className="even">
-                            <td style={{ textAlign: "left"}}>3–5 (Moderate)</td>
-                            <td style={{ textAlign: "center"}}>6</td>
-                            <td style={{ textAlign: "center"}}>2</td>
-                            <td style={{ textAlign: "center"}}>8 (15.4%)</td>
+                            <td style={{ textAlign: "left" }}>3–5 (Moderate)</td>
+                            <td style={{ textAlign: "center" }}>6</td>
+                            <td style={{ textAlign: "center" }}>2</td>
+                            <td style={{ textAlign: "center" }}>8 (15.4%)</td>
                         </tr>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}>6–8 (High)</td>
-                            <td style={{ textAlign: "center"}}>16</td>
-                            <td style={{ textAlign: "center"}}>17</td>
-                            <td style={{ textAlign: "center"}}>33 (63.5%)</td>
+                            <td style={{ textAlign: "left" }}>6–8 (High)</td>
+                            <td style={{ textAlign: "center" }}>16</td>
+                            <td style={{ textAlign: "center" }}>17</td>
+                            <td style={{ textAlign: "center" }}>33 (63.5%)</td>
                         </tr>
                         <tr className="even">
-                            <td style={{ textAlign: "left"}}>9–10 (Very High)</td>
-                            <td style={{ textAlign: "center"}}>2</td>
-                            <td style={{ textAlign: "center"}}>3</td>
-                            <td style={{ textAlign: "center"}}>5 (9.6%)</td>
+                            <td style={{ textAlign: "left" }}>9–10 (Very High)</td>
+                            <td style={{ textAlign: "center" }}>2</td>
+                            <td style={{ textAlign: "center" }}>3</td>
+                            <td style={{ textAlign: "center" }}>5 (9.6%)</td>
                         </tr>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}><strong>Average Score</strong></td>
-                            <td style={{ textAlign: "center"}}>5.75</td>
-                            <td style={{ textAlign: "center"}}>6.63</td>
-                            <td style={{ textAlign: "center"}}>6.15</td>
+                            <td style={{ textAlign: "left" }}><strong>Average Score</strong></td>
+                            <td style={{ textAlign: "center" }}>5.75</td>
+                            <td style={{ textAlign: "center" }}>6.63</td>
+                            <td style={{ textAlign: "center" }}>6.15</td>
                         </tr>
                     </tbody>
                 </table>
@@ -2113,41 +2156,41 @@ export default function MSThesis() {
                         accessibility features?” by disability status</caption>
                     <thead>
                         <tr className="header">
-                            <th style={{ textAlign: "left"}}></th>
+                            <th style={{ textAlign: "left" }}></th>
                             <th colSpan={3}
-                                style={{ textAlign: "center"}}><strong>Response</strong></th>
+                                style={{ textAlign: "center" }}><strong>Response</strong></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}><strong>Disabled</strong></td>
-                            <td style={{ textAlign: "center"}}><strong>Yes</strong></td>
-                            <td style={{ textAlign: "center"}}><strong>Maybe</strong></td>
-                            <td style={{ textAlign: "center"}}><strong>No</strong></td>
+                            <td style={{ textAlign: "left" }}><strong>Disabled</strong></td>
+                            <td style={{ textAlign: "center" }}><strong>Yes</strong></td>
+                            <td style={{ textAlign: "center" }}><strong>Maybe</strong></td>
+                            <td style={{ textAlign: "center" }}><strong>No</strong></td>
                         </tr>
                         <tr className="even">
-                            <td style={{ textAlign: "left"}}><strong>Yes</strong></td>
-                            <td style={{ textAlign: "center"}}>7</td>
-                            <td style={{ textAlign: "center"}}>4</td>
-                            <td style={{ textAlign: "center"}}>1</td>
+                            <td style={{ textAlign: "left" }}><strong>Yes</strong></td>
+                            <td style={{ textAlign: "center" }}>7</td>
+                            <td style={{ textAlign: "center" }}>4</td>
+                            <td style={{ textAlign: "center" }}>1</td>
                         </tr>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}><strong>No</strong></td>
-                            <td style={{ textAlign: "center"}}>2</td>
-                            <td style={{ textAlign: "center"}}>1</td>
-                            <td style={{ textAlign: "center"}}>26</td>
+                            <td style={{ textAlign: "left" }}><strong>No</strong></td>
+                            <td style={{ textAlign: "center" }}>2</td>
+                            <td style={{ textAlign: "center" }}>1</td>
+                            <td style={{ textAlign: "center" }}>26</td>
                         </tr>
                         <tr className="even">
-                            <td style={{ textAlign: "left"}}><strong>Other</strong></td>
-                            <td style={{ textAlign: "center"}}>0</td>
-                            <td style={{ textAlign: "center"}}>0</td>
-                            <td style={{ textAlign: "center"}}>2</td>
+                            <td style={{ textAlign: "left" }}><strong>Other</strong></td>
+                            <td style={{ textAlign: "center" }}>0</td>
+                            <td style={{ textAlign: "center" }}>0</td>
+                            <td style={{ textAlign: "center" }}>2</td>
                         </tr>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}><strong>Total</strong></td>
-                            <td style={{ textAlign: "center"}}>9</td>
-                            <td style={{ textAlign: "center"}}>5</td>
-                            <td style={{ textAlign: "center"}}>29</td>
+                            <td style={{ textAlign: "left" }}><strong>Total</strong></td>
+                            <td style={{ textAlign: "center" }}>9</td>
+                            <td style={{ textAlign: "center" }}>5</td>
+                            <td style={{ textAlign: "center" }}>29</td>
                         </tr>
                     </tbody>
                 </table>
@@ -2158,48 +2201,48 @@ export default function MSThesis() {
                         game?”</caption>
                     <thead>
                         <tr className="header">
-                            <th style={{ textAlign: "left"}}><strong>Difficulty Rating</strong></th>
-                            <th style={{ textAlign: "center"}}><strong>Version A</strong></th>
-                            <th style={{ textAlign: "center"}}><strong>Version B</strong></th>
-                            <th style={{ textAlign: "center"}}><strong>Total</strong></th>
+                            <th style={{ textAlign: "left" }}><strong>Difficulty Rating</strong></th>
+                            <th style={{ textAlign: "center" }}><strong>Version A</strong></th>
+                            <th style={{ textAlign: "center" }}><strong>Version B</strong></th>
+                            <th style={{ textAlign: "center" }}><strong>Total</strong></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}>Very Easy</td>
-                            <td style={{ textAlign: "center"}}>6</td>
-                            <td style={{ textAlign: "center"}}>9</td>
-                            <td style={{ textAlign: "center"}}>15 (28.8%)</td>
+                            <td style={{ textAlign: "left" }}>Very Easy</td>
+                            <td style={{ textAlign: "center" }}>6</td>
+                            <td style={{ textAlign: "center" }}>9</td>
+                            <td style={{ textAlign: "center" }}>15 (28.8%)</td>
                         </tr>
                         <tr className="even">
-                            <td style={{ textAlign: "left"}}>Easy</td>
-                            <td style={{ textAlign: "center"}}>14</td>
-                            <td style={{ textAlign: "center"}}>5</td>
-                            <td style={{ textAlign: "center"}}>19 (36.5%)</td>
+                            <td style={{ textAlign: "left" }}>Easy</td>
+                            <td style={{ textAlign: "center" }}>14</td>
+                            <td style={{ textAlign: "center" }}>5</td>
+                            <td style={{ textAlign: "center" }}>19 (36.5%)</td>
                         </tr>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}>Neutral</td>
-                            <td style={{ textAlign: "center"}}>3</td>
-                            <td style={{ textAlign: "center"}}>9</td>
-                            <td style={{ textAlign: "center"}}>12 (23.1%)</td>
+                            <td style={{ textAlign: "left" }}>Neutral</td>
+                            <td style={{ textAlign: "center" }}>3</td>
+                            <td style={{ textAlign: "center" }}>9</td>
+                            <td style={{ textAlign: "center" }}>12 (23.1%)</td>
                         </tr>
                         <tr className="even">
-                            <td style={{ textAlign: "left"}}>Difficult</td>
-                            <td style={{ textAlign: "center"}}>2</td>
-                            <td style={{ textAlign: "center"}}>1</td>
-                            <td style={{ textAlign: "center"}}>3 (5.8%)</td>
+                            <td style={{ textAlign: "left" }}>Difficult</td>
+                            <td style={{ textAlign: "center" }}>2</td>
+                            <td style={{ textAlign: "center" }}>1</td>
+                            <td style={{ textAlign: "center" }}>3 (5.8%)</td>
                         </tr>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}>Very Difficult</td>
-                            <td style={{ textAlign: "center"}}>2</td>
-                            <td style={{ textAlign: "center"}}>0</td>
-                            <td style={{ textAlign: "center"}}>2 (3.8%)</td>
+                            <td style={{ textAlign: "left" }}>Very Difficult</td>
+                            <td style={{ textAlign: "center" }}>2</td>
+                            <td style={{ textAlign: "center" }}>0</td>
+                            <td style={{ textAlign: "center" }}>2 (3.8%)</td>
                         </tr>
                         <tr className="even">
-                            <td style={{ textAlign: "left"}}>Other</td>
-                            <td style={{ textAlign: "center"}}>1</td>
-                            <td style={{ textAlign: "center"}}>0</td>
-                            <td style={{ textAlign: "center"}}>2 (1.9%)</td>
+                            <td style={{ textAlign: "left" }}>Other</td>
+                            <td style={{ textAlign: "center" }}>1</td>
+                            <td style={{ textAlign: "center" }}>0</td>
+                            <td style={{ textAlign: "center" }}>2 (1.9%)</td>
                         </tr>
                     </tbody>
                 </table>
@@ -2211,31 +2254,31 @@ export default function MSThesis() {
                         to?”</caption>
                     <thead>
                         <tr className="header">
-                            <th style={{ textAlign: "left"}}><strong>Response</strong></th>
-                            <th style={{ textAlign: "center"}}><strong>Version A</strong></th>
-                            <th style={{ textAlign: "center"}}></th>
+                            <th style={{ textAlign: "left" }}><strong>Response</strong></th>
+                            <th style={{ textAlign: "center" }}><strong>Version A</strong></th>
+                            <th style={{ textAlign: "center" }}></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}>Yes</td>
-                            <td style={{ textAlign: "center"}}>31</td>
-                            <td style={{ textAlign: "center"}}></td>
+                            <td style={{ textAlign: "left" }}>Yes</td>
+                            <td style={{ textAlign: "center" }}>31</td>
+                            <td style={{ textAlign: "center" }}></td>
                         </tr>
                         <tr className="even">
-                            <td style={{ textAlign: "left"}}>No</td>
-                            <td style={{ textAlign: "center"}}>3</td>
-                            <td style={{ textAlign: "center"}}></td>
+                            <td style={{ textAlign: "left" }}>No</td>
+                            <td style={{ textAlign: "center" }}>3</td>
+                            <td style={{ textAlign: "center" }}></td>
                         </tr>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}>Other (Fill in own response)</td>
-                            <td style={{ textAlign: "center"}}>3</td>
-                            <td style={{ textAlign: "center"}}></td>
+                            <td style={{ textAlign: "left" }}>Other (Fill in own response)</td>
+                            <td style={{ textAlign: "center" }}>3</td>
+                            <td style={{ textAlign: "center" }}></td>
                         </tr>
                         <tr className="even">
-                            <td style={{ textAlign: "left"}}>Total</td>
-                            <td style={{ textAlign: "center"}}>37</td>
-                            <td style={{ textAlign: "center"}}></td>
+                            <td style={{ textAlign: "left" }}>Total</td>
+                            <td style={{ textAlign: "center" }}>37</td>
+                            <td style={{ textAlign: "center" }}></td>
                         </tr>
                     </tbody>
                 </table>
@@ -2247,48 +2290,48 @@ export default function MSThesis() {
                         responses)</caption>
                     <thead>
                         <tr className="header">
-                            <th style={{ textAlign: "left"}}><strong>Response</strong></th>
-                            <th style={{ textAlign: "center"}}><strong>Disabled</strong></th>
-                            <th style={{ textAlign: "center"}}><strong>Non-Disabled</strong></th>
-                            <th style={{ textAlign: "center"}}><strong>Other</strong></th>
-                            <th style={{ textAlign: "center"}}><strong>Total</strong></th>
+                            <th style={{ textAlign: "left" }}><strong>Response</strong></th>
+                            <th style={{ textAlign: "center" }}><strong>Disabled</strong></th>
+                            <th style={{ textAlign: "center" }}><strong>Non-Disabled</strong></th>
+                            <th style={{ textAlign: "center" }}><strong>Other</strong></th>
+                            <th style={{ textAlign: "center" }}><strong>Total</strong></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}>Yes</td>
-                            <td style={{ textAlign: "center"}}>3</td>
-                            <td style={{ textAlign: "center"}}>2</td>
-                            <td style={{ textAlign: "center"}}>0</td>
-                            <td style={{ textAlign: "center"}}>5</td>
+                            <td style={{ textAlign: "left" }}>Yes</td>
+                            <td style={{ textAlign: "center" }}>3</td>
+                            <td style={{ textAlign: "center" }}>2</td>
+                            <td style={{ textAlign: "center" }}>0</td>
+                            <td style={{ textAlign: "center" }}>5</td>
                         </tr>
                         <tr className="even">
-                            <td style={{ textAlign: "left"}}>Maybe</td>
-                            <td style={{ textAlign: "center"}}>2</td>
-                            <td style={{ textAlign: "center"}}>4</td>
-                            <td style={{ textAlign: "center"}}>0</td>
-                            <td style={{ textAlign: "center"}}>6</td>
+                            <td style={{ textAlign: "left" }}>Maybe</td>
+                            <td style={{ textAlign: "center" }}>2</td>
+                            <td style={{ textAlign: "center" }}>4</td>
+                            <td style={{ textAlign: "center" }}>0</td>
+                            <td style={{ textAlign: "center" }}>6</td>
                         </tr>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}>No</td>
-                            <td style={{ textAlign: "center"}}>3</td>
-                            <td style={{ textAlign: "center"}}>22</td>
-                            <td style={{ textAlign: "center"}}>1</td>
-                            <td style={{ textAlign: "center"}}>26</td>
+                            <td style={{ textAlign: "left" }}>No</td>
+                            <td style={{ textAlign: "center" }}>3</td>
+                            <td style={{ textAlign: "center" }}>22</td>
+                            <td style={{ textAlign: "center" }}>1</td>
+                            <td style={{ textAlign: "center" }}>26</td>
                         </tr>
                         <tr className="even">
-                            <td style={{ textAlign: "left"}}>Other (Fill in own response)</td>
-                            <td style={{ textAlign: "center"}}>0</td>
-                            <td style={{ textAlign: "center"}}>3</td>
-                            <td style={{ textAlign: "center"}}>1</td>
-                            <td style={{ textAlign: "center"}}>4</td>
+                            <td style={{ textAlign: "left" }}>Other (Fill in own response)</td>
+                            <td style={{ textAlign: "center" }}>0</td>
+                            <td style={{ textAlign: "center" }}>3</td>
+                            <td style={{ textAlign: "center" }}>1</td>
+                            <td style={{ textAlign: "center" }}>4</td>
                         </tr>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}><strong>Total</strong></td>
-                            <td style={{ textAlign: "center"}}>8</td>
-                            <td style={{ textAlign: "center"}}>31</td>
-                            <td style={{ textAlign: "center"}}>2</td>
-                            <td style={{ textAlign: "center"}}>41</td>
+                            <td style={{ textAlign: "left" }}><strong>Total</strong></td>
+                            <td style={{ textAlign: "center" }}>8</td>
+                            <td style={{ textAlign: "center" }}>31</td>
+                            <td style={{ textAlign: "center" }}>2</td>
+                            <td style={{ textAlign: "center" }}>41</td>
                         </tr>
                     </tbody>
                 </table>
@@ -2300,48 +2343,48 @@ export default function MSThesis() {
                         responses)</caption>
                     <thead>
                         <tr className="header">
-                            <th style={{ textAlign: "left"}}><strong>Response</strong></th>
-                            <th style={{ textAlign: "center"}}><strong>Disabled</strong></th>
-                            <th style={{ textAlign: "center"}}><strong>Non-Disabled</strong></th>
-                            <th style={{ textAlign: "center"}}><strong>Other</strong></th>
-                            <th style={{ textAlign: "center"}}><strong>Total</strong></th>
+                            <th style={{ textAlign: "left" }}><strong>Response</strong></th>
+                            <th style={{ textAlign: "center" }}><strong>Disabled</strong></th>
+                            <th style={{ textAlign: "center" }}><strong>Non-Disabled</strong></th>
+                            <th style={{ textAlign: "center" }}><strong>Other</strong></th>
+                            <th style={{ textAlign: "center" }}><strong>Total</strong></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}>Yes</td>
-                            <td style={{ textAlign: "center"}}>3</td>
-                            <td style={{ textAlign: "center"}}>2</td>
-                            <td style={{ textAlign: "center"}}>0</td>
-                            <td style={{ textAlign: "center"}}>5</td>
+                            <td style={{ textAlign: "left" }}>Yes</td>
+                            <td style={{ textAlign: "center" }}>3</td>
+                            <td style={{ textAlign: "center" }}>2</td>
+                            <td style={{ textAlign: "center" }}>0</td>
+                            <td style={{ textAlign: "center" }}>5</td>
                         </tr>
                         <tr className="even">
-                            <td style={{ textAlign: "left"}}>Maybe</td>
-                            <td style={{ textAlign: "center"}}>2</td>
-                            <td style={{ textAlign: "center"}}>2</td>
-                            <td style={{ textAlign: "center"}}>0</td>
-                            <td style={{ textAlign: "center"}}>4</td>
+                            <td style={{ textAlign: "left" }}>Maybe</td>
+                            <td style={{ textAlign: "center" }}>2</td>
+                            <td style={{ textAlign: "center" }}>2</td>
+                            <td style={{ textAlign: "center" }}>0</td>
+                            <td style={{ textAlign: "center" }}>4</td>
                         </tr>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}>No</td>
-                            <td style={{ textAlign: "center"}}>2</td>
-                            <td style={{ textAlign: "center"}}>13</td>
-                            <td style={{ textAlign: "center"}}>1</td>
-                            <td style={{ textAlign: "center"}}>16</td>
+                            <td style={{ textAlign: "left" }}>No</td>
+                            <td style={{ textAlign: "center" }}>2</td>
+                            <td style={{ textAlign: "center" }}>13</td>
+                            <td style={{ textAlign: "center" }}>1</td>
+                            <td style={{ textAlign: "center" }}>16</td>
                         </tr>
                         <tr className="even">
-                            <td style={{ textAlign: "left"}}>Other (Fill in own response)</td>
-                            <td style={{ textAlign: "center"}}>0</td>
-                            <td style={{ textAlign: "center"}}>2</td>
-                            <td style={{ textAlign: "center"}}>0</td>
-                            <td style={{ textAlign: "center"}}>2</td>
+                            <td style={{ textAlign: "left" }}>Other (Fill in own response)</td>
+                            <td style={{ textAlign: "center" }}>0</td>
+                            <td style={{ textAlign: "center" }}>2</td>
+                            <td style={{ textAlign: "center" }}>0</td>
+                            <td style={{ textAlign: "center" }}>2</td>
                         </tr>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}><strong>Total</strong></td>
-                            <td style={{ textAlign: "center"}}>7</td>
-                            <td style={{ textAlign: "center"}}>19</td>
-                            <td style={{ textAlign: "center"}}>1</td>
-                            <td style={{ textAlign: "center"}}>27</td>
+                            <td style={{ textAlign: "left" }}><strong>Total</strong></td>
+                            <td style={{ textAlign: "center" }}>7</td>
+                            <td style={{ textAlign: "center" }}>19</td>
+                            <td style={{ textAlign: "center" }}>1</td>
+                            <td style={{ textAlign: "center" }}>27</td>
                         </tr>
                     </tbody>
                 </table>
@@ -2352,48 +2395,48 @@ export default function MSThesis() {
                         game more if it had accessibility features?”</caption>
                     <thead>
                         <tr className="header">
-                            <th style={{ textAlign: "left"}}><strong>Response</strong></th>
-                            <th style={{ textAlign: "center"}}><strong>Disabled</strong></th>
-                            <th style={{ textAlign: "center"}}><strong>Non-Disabled</strong></th>
-                            <th style={{ textAlign: "center"}}><strong>Other</strong></th>
-                            <th style={{ textAlign: "center"}}><strong>Total</strong></th>
+                            <th style={{ textAlign: "left" }}><strong>Response</strong></th>
+                            <th style={{ textAlign: "center" }}><strong>Disabled</strong></th>
+                            <th style={{ textAlign: "center" }}><strong>Non-Disabled</strong></th>
+                            <th style={{ textAlign: "center" }}><strong>Other</strong></th>
+                            <th style={{ textAlign: "center" }}><strong>Total</strong></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}>Yes</td>
-                            <td style={{ textAlign: "center"}}>1</td>
-                            <td style={{ textAlign: "center"}}>0</td>
-                            <td style={{ textAlign: "center"}}>0</td>
-                            <td style={{ textAlign: "center"}}>1</td>
+                            <td style={{ textAlign: "left" }}>Yes</td>
+                            <td style={{ textAlign: "center" }}>1</td>
+                            <td style={{ textAlign: "center" }}>0</td>
+                            <td style={{ textAlign: "center" }}>0</td>
+                            <td style={{ textAlign: "center" }}>1</td>
                         </tr>
                         <tr className="even">
-                            <td style={{ textAlign: "left"}}>Maybe</td>
-                            <td style={{ textAlign: "center"}}>2</td>
-                            <td style={{ textAlign: "center"}}>3</td>
-                            <td style={{ textAlign: "center"}}>0</td>
-                            <td style={{ textAlign: "center"}}>5</td>
+                            <td style={{ textAlign: "left" }}>Maybe</td>
+                            <td style={{ textAlign: "center" }}>2</td>
+                            <td style={{ textAlign: "center" }}>3</td>
+                            <td style={{ textAlign: "center" }}>0</td>
+                            <td style={{ textAlign: "center" }}>5</td>
                         </tr>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}>No</td>
-                            <td style={{ textAlign: "center"}}>0</td>
-                            <td style={{ textAlign: "center"}}>2</td>
-                            <td style={{ textAlign: "center"}}>0</td>
-                            <td style={{ textAlign: "center"}}>2</td>
+                            <td style={{ textAlign: "left" }}>No</td>
+                            <td style={{ textAlign: "center" }}>0</td>
+                            <td style={{ textAlign: "center" }}>2</td>
+                            <td style={{ textAlign: "center" }}>0</td>
+                            <td style={{ textAlign: "center" }}>2</td>
                         </tr>
                         <tr className="even">
-                            <td style={{ textAlign: "left"}}>Other (Fill in own response)</td>
-                            <td style={{ textAlign: "center"}}>1</td>
-                            <td style={{ textAlign: "center"}}>0</td>
-                            <td style={{ textAlign: "center"}}>0</td>
-                            <td style={{ textAlign: "center"}}>1</td>
+                            <td style={{ textAlign: "left" }}>Other (Fill in own response)</td>
+                            <td style={{ textAlign: "center" }}>1</td>
+                            <td style={{ textAlign: "center" }}>0</td>
+                            <td style={{ textAlign: "center" }}>0</td>
+                            <td style={{ textAlign: "center" }}>1</td>
                         </tr>
                         <tr className="odd">
-                            <td style={{ textAlign: "left"}}><strong>Total</strong></td>
-                            <td style={{ textAlign: "center"}}>4</td>
-                            <td style={{ textAlign: "center"}}>5</td>
-                            <td style={{ textAlign: "center"}}>0</td>
-                            <td style={{ textAlign: "center"}}>9</td>
+                            <td style={{ textAlign: "left" }}><strong>Total</strong></td>
+                            <td style={{ textAlign: "center" }}>4</td>
+                            <td style={{ textAlign: "center" }}>5</td>
+                            <td style={{ textAlign: "center" }}>0</td>
+                            <td style={{ textAlign: "center" }}>9</td>
                         </tr>
                     </tbody>
                 </table>

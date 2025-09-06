@@ -6,9 +6,9 @@
         background-color: #fdfdfd;
     } */
 
-    .section-box {
-        padding-left: 5rem;
-        padding-right: 5rem;
+    .project-page .section-box {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     body {  
@@ -54,13 +54,13 @@
         margin: 1em 0;
     }
 
-    a {
+    /* a {
         color: #1a1a1a;
     }
 
     a:visited {
         color: #1a1a1a;
-    }
+    } */
 
     img {
         max-width: 100%;
@@ -88,7 +88,10 @@
     ol,
     ul {
         padding-left: 1.7em;
-        margin-top: 1em;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+        margin-left:5rem;
+        margin-right:5rem;
     }
 
     li>ol,
@@ -133,7 +136,10 @@
     }
 
     table {
-        margin: 1em 0;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+        margin-left: auto;
+        margin-right: auto;
         border-collapse: collapse;
         width: 100%;
         overflow-x: auto;
