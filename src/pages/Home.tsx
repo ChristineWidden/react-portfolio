@@ -4,7 +4,6 @@ export default function Home() {
     return (
         <div>
             <h1>Welcome to my Portfolio!</h1>
-            <p>This is the home page.</p>
             <p>I'm a recent Computer Science grad with a passion for building great games and accessible software!</p>
 
             <div className="image-grid">
