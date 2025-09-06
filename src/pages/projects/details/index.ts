@@ -1,4 +1,3 @@
-import ThesisDetails from "./ms_thesis";
 import AlienInvasionDetails from "./alien_invasion"
 import GoblinChase from "./goblin_chase";
 import Thesis from "./Thesis";
