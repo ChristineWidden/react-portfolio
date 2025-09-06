@@ -10,14 +10,27 @@
     cursor: pointer;
     transition: transform 0.3s;
     border: 3px solid white;
+    display: flex;
 }
 
-.project-overlay h3 {   
+a {
+    text-decoration: none;
+}
+
+div.description {
+    padding: 0 0 1rem 0;
+    flex: 1;
+    /* fills remaining space in card-content */
+    overflow: hidden;
+}
+
+.project-overlay h3 {
     text-shadow: 0 1px 5px black, 0 1px 8px black, 0 1px 8px black, 0 1px 10px black, 0 1px 3px black;
 }
 
 .project-overlay p {
     transition: opacity 0.3s ease;
+    margin: 0;
 }
 
 .project-overlay:hover p {
@@ -29,10 +42,14 @@
 }
 
 .project-overlay {
-    position: absolute;
+    /* position: absolute; */
     padding: 1rem;
     z-index: 2;
     transition: opacity 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+    flex: 1;               /* fills remaining space */
 }
 
 .project-image {

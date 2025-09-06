@@ -1,0 +1,117 @@
+.centered {
+    margin: auto;
+    /* Center the button horizontally */
+    text-align: center;
+}
+
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+
+section {
+    padding: 40px 0;
+}
+
+.section-box {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 1rem 3rem 1rem 3rem;
+    margin: 0 3rem 0 3rem;
+    color: black;
+}
+
+.section-box p {
+    color: black;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+.project {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(16, 32, 64);
+    aspect-ratio: 1/1;
+
+    /* position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-top: 100%;  */
+    background-size: cover;
+    background-position: center;
+}
+
+.project:hover .project-image {
+    filter: brightness(1) contrast(1);
+    /* Return to normal brightness and contrast */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: filter 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /* Add transition for smooth effect */
+}
+
+.project-content {
+    text-align: center;
+    box-sizing: border-box;
+    color: #fff;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+    padding: 5px;
+}
+
+.project h3 {
+    margin-bottom: 10px;
+}
+
+.project p {
+    margin-bottom: 0;
+}
+
+button {
+    border: none;
+    background-color: rgb(16, 32, 64);
+    ;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.projectImg {
+    outline: 5px solid black;
+    max-width: min(700px, 100%);
+    height: auto;
+}

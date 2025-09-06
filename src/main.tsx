@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 // import App from './App';
 import AppRoutes from './Routes';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 const basename = import.meta.env.BASE_URL;
 // const basename = import.meta.env.DEV ? "/" : "/react-portfolio/";
@@ -12,7 +14,9 @@ const basename = import.meta.env.BASE_URL;
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter basename={basename}>
+      <Navbar />
       <AppRoutes />
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>
 );

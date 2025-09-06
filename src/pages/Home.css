@@ -1,0 +1,12 @@
+.image-grid {
+  column-count: 3;       /* maximum number of columns */
+  column-gap: 16px;      /* space between columns */
+}
+
+.image-grid img {
+  width: 100%;           /* fills the column width */
+  margin-bottom: 16px;   /* vertical gap between images */
+  display: block;
+  object-fit: cover;
+  break-inside: avoid;   /* prevents images from breaking across columns */
+}

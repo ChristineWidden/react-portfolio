@@ -12,10 +12,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image }) 
         <Link to={`/projects/${image}`} className="project-card">
             <div className="project-overlay">
                 <h3>{title}</h3>
-                <p>{description}</p>
+                <div className="description">
+                    <p>{description}</p>
+                </div>
             </div>
             <img className="project-image" 
-            src={`${import.meta.env.BASE_URL}images/${image}.png`}
+            src={`${import.meta.env.BASE_URL}images/project_icons/${image}.png`}
             alt={title} />
         </Link>
     );

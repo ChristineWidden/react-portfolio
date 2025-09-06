@@ -1,28 +1,43 @@
-import styles from './Projects.module.css';
-import ProjectCard from '../../components/ProjectCard';
+import { useState, useEffect } from "react";
+import resumeData from "../../resumeData.json";
+import ProjectCard from "../../components/ProjectCard";
+import type { Project } from "../../types/Project";
 
+function Projects() {
+    const [searchTerm, setSearchTerm] = useState("");
+    const [projects, setProjects] = useState<Project[]>([]);
 
-export default function Projects() {
+    useEffect(() => {
+        setProjects(resumeData.projects || []);
+    }, []);
+
+    const filteredProjects = projects.filter((proj) =>
+        (proj.name + proj.desc.join(" ") + (proj.keywords ?? []).join(" "))
+            .toLowerCase()
+            .includes(searchTerm.toLowerCase())
+    );
+
     return (
-        <div className={styles.projectsPage}>
-            <h2>Projects</h2>
-            <div className={styles.projectsGrid}>
-                <ProjectCard
-                    title="Alien Invasion"
-                    description="A Unity tower defense game built with a team."
-                    image="null"
-                />
-                <ProjectCard
-                    title="Resume Generator"
-                    description="A local web app for generating resumes."
-                    image="null"
-                />
-                <ProjectCard
-                    title="Goblin Chase"
-                    description="A Unity bullet-hell platformer."
-                    image="null"
-                />
+        <div>
+            <input
+                type="text"
+                placeholder="Search by keyword or tag..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="search-input"
+            />
+            <div className="item-grid">
+                {filteredProjects.map((proj) => (
+                    <ProjectCard
+                        key={proj.id}
+                        title={proj.name}
+                        description={proj.desc.join(" ")}
+                        image={proj.id || "null"}
+                    />
+                ))}
             </div>
         </div>
     );
 }
+
+export default Projects;

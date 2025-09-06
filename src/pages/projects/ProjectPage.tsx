@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 // import resumeData from "../../../public/resumeData.json";
 import resumeData from '../../resumeData.json';
 import projectDetails from "./details";
+import "./Project.page.css"; // CSS for the hover effect
 
 function ProjectPage() {
     const { slug } = useParams();
@@ -15,10 +16,10 @@ function ProjectPage() {
     return (
         <div className="project-page">
             <h1>{project.name}</h1>
-            <img className="project-page-image"
+            {/* <img className="project-page-image"
                 src={`${import.meta.env.BASE_URL}images/${project.id}.png`}
                 alt={project.name} />
-            <p>{project.desc}</p>
+            <p>{project.desc}</p> */}
 
             {/* Render extra manual content if it exists */}
             {DetailComponent ? <DetailComponent /> : <p>No extra details yet.</p>}
