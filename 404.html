@@ -5,17 +5,22 @@
     <meta charset="UTF-8">
     <title>Redirecting...</title>
     <script type="text/javascript">
-        // Get the current path
-        const path = window.location.pathname;
-        const base = '/react-portfolio/'; // your GitHub Pages base path
+        (function () {
+            const base = '/react-portfolio/'; // your GitHub Pages base path
+            const path = window.location.pathname + window.location.search + window.location.hash;
 
-        // Only redirect if not already at index.html
-        if (!path.endsWith('index.html') && !path.startsWith(base)) {
-            window.location.replace(base + 'index.html' + window.location.hash);
-        }
+            // Only redirect if we are not already at the base index.html
+            if (!path.startsWith(base + 'index.html')) {
+                // Preserve the subpath in the hash so React Router can pick it up
+                const redirectTo = base + 'index.html' + '#!' + path.replace(base, '/');
+                window.location.replace(redirectTo);
+            }
+        })();
     </script>
 </head>
 
-<body></body>
+<body>
+    Redirecting2...
+</body>
 
 </html>
