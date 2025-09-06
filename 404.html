@@ -2,7 +2,18 @@
 <html>
 
 <head>
-    <meta http-equiv="refresh" content="0; URL=./index.html">
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+        // Get the current path
+        const path = window.location.pathname;
+        const base = '/react-portfolio/'; // your GitHub Pages base path
+
+        // Only redirect if not already at index.html
+        if (!path.endsWith('index.html') && !path.startsWith(base)) {
+            window.location.replace(base + 'index.html' + window.location.hash);
+        }
+    </script>
 </head>
 
 <body></body>
