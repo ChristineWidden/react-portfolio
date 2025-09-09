@@ -1,4 +1,4 @@
-function GoblinChase() {
+export default function GoblinChase() {
     return (
         <div className="container">
             <div className="section-box">
@@ -20,5 +20,3 @@ function GoblinChase() {
         </div>
     );
 }
-
-export default GoblinChase;

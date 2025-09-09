@@ -537,23 +537,6 @@
             ]
         },
         {
-            "name": "OpenGL Projects",
-            "id": "opengl_projects",
-            "desc": [
-                "Implemented custom vertex and fragment shaders in GLSL to create real-time lighting, texturing, and visual effects in OpenGL.",
-                "Optimized rendering performance by applying fundamental algorithms and data structures in C++."
-            ],
-            "keywords": [
-                "OpenGL",
-                "C++",
-                "3D Graphics",
-                "Rendering",
-                "Animation",
-                "Shaders",
-                "GPU Programming"
-            ]
-        },
-        {
             "name": "Portfolio Website",
             "id": "portfolio_site",
             "desc": [
@@ -632,6 +615,23 @@
             ]
         },
         {
+            "name": "OpenGL Projects",
+            "id": "opengl_projects",
+            "desc": [
+                "Implemented custom vertex and fragment shaders in GLSL to create real-time lighting, texturing, and visual effects in OpenGL.",
+                "Optimized rendering performance by applying fundamental algorithms and data structures in C++."
+            ],
+            "keywords": [
+                "OpenGL",
+                "C++",
+                "3D Graphics",
+                "Rendering",
+                "Animation",
+                "Shaders",
+                "GPU Programming"
+            ]
+        },
+        {
             "name": "Notes Made Easy",
             "id": "notes_made_easy",
             "desc": [
@@ -670,6 +670,20 @@
                 "OAuth",
                 "Database Management",
                 "Bot Development"
+            ]
+        },
+        {
+            "name": "Recipe Recommender Algorithm",
+            "id": "recipe_recommender",
+            "desc": [
+                "An AI that used collaborative filtering to analyze grocery basket kaggle datasets, recommending recipes based on the ingredients a user possessed."
+            ],
+            "keywords": [
+                "collaborative filtering",
+                "kaggle",
+                "data science",
+                "AI",
+                "Machine Learning"
             ]
         },
         {
