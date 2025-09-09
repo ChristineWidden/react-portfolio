@@ -7,7 +7,8 @@
         "Masters in CS Graduate",
         "QA Tester",
         "SDET",
-        "Game Designer Intern"
+        "Game Designer Intern",
+        "Technical Artist (Shaders/Graphics) | QA Engineer | M.S. Computer Science"
     ],
     "email": [
         "ChristineWidden@Outlook.com"
@@ -167,7 +168,6 @@
         "Postman",
         "Linear Algebra",
         "MySQL",
-        "OpenGL",
         "Git and GitHub",
         "GitHub, GitHub Actions",
         "Linux, Windows, Mac",
@@ -179,7 +179,13 @@
         "Game Design",
         "Game Development",
         "Unity",
+        "Unreal Engine 5",
         "Video Game Accessibility",
+        "OpenGL",
+        "Computer Graphics",
+        "Autodesk Maya",
+        "GLSL",
+        "Shaders",
         "Software Development",
         "Software Development Life Cycle",
         "Software Accessibility",
@@ -268,9 +274,9 @@
                 {
                     "name": "Computer Graphics",
                     "id": "computer_graphics",
-                    "description": "OpenGl in C++, covering fundamentals of computer graphics, rendering, and GPU usage.",
+                    "description": "OpenGL in C++, covering fundamentals of computer graphics, shaders, rendering, and GPU usage.",
                     "keywords": [
-                        "OpenGl",
+                        "OpenGL",
                         "C++",
                         "Graphics",
                         "Computer Graphics",
@@ -284,7 +290,7 @@
                     "id": "computer_animation",
                     "description": "Continuation of Computer Graphics, with a focus on 3D animation with OpenGL.",
                     "keywords": [
-                        "OpenGl",
+                        "OpenGL",
                         "C++",
                         "Graphics",
                         "Computer Graphics",
@@ -329,7 +335,7 @@
                 {
                     "name": "Game Design",
                     "id": "game_design",
-                    "description": "Developing a C#-based games in Unity, alongside an in-depth look into the principles behind good game design.",
+                    "description": "Developing C#-based games in Unity, alongside an in-depth look into the principles behind good game design.",
                     "keywords": [
                         "Unity",
                         "C#",
@@ -340,6 +346,25 @@
                         "User Experience",
                         "Playtesting",
                         "Agile Development"
+                    ]
+                },
+                {
+                    "name": "Interactive Entertainment Engineering",
+                    "id": "interactive_entertainment",
+                    "description": "A deep dive into game design, with engines such as Unity, Godot, and Inform7.",
+                    "keywords": [
+                        "Unity",
+                        "Godot",
+                        "Unreal Engine",
+                        "Inform7",
+                        "C#",
+                        "C++",
+                        "Python",
+                        "Game Design",
+                        "Game Development",
+                        "Debugging",
+                        "Collaboration",
+                        "Agile Practices"
                     ]
                 },
                 {
@@ -509,6 +534,39 @@
                 "Animation",
                 "Shaders",
                 "GPU Programming"
+            ]
+        },
+        {
+            "name": "OpenGL Projects",
+            "id": "opengl_projects",
+            "desc": [
+                "Implemented custom vertex and fragment shaders in GLSL to create real-time lighting, texturing, and visual effects in OpenGL.",
+                "Optimized rendering performance by applying fundamental algorithms and data structures in C++."
+            ],
+            "keywords": [
+                "OpenGL",
+                "C++",
+                "3D Graphics",
+                "Rendering",
+                "Animation",
+                "Shaders",
+                "GPU Programming"
+            ]
+        },
+        {
+            "name": "Portfolio Website",
+            "id": "portfolio_site",
+            "desc": [
+                "Built a portfolio website from the ground up using React."
+            ],
+            "keywords": [
+                "React",
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "Frontend Development",
+                "Front end",
+                "Web Development"
             ]
         },
         {

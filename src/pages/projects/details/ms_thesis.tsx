@@ -1,5 +1,5 @@
 
-export default function Thesis() {
+export default function MSThesis() {
     return (
         <div className="container">
             <div className="section-box">
