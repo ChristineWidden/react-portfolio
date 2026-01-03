@@ -12,9 +12,9 @@ function Jobs() {
     }, []);
 
     const filteredJobs = jobs.filter((job) =>
-        (Array.isArray(job.description))
+        (Array.isArray(job.select_description))
         &&
-        (job.title + (job.description ?? []).join(" ") + (job.keywords ?? []).join(" "))
+        (job.title + (job.select_description ?? []).join(" ") + (job.keywords ?? []).join(" "))
             .toLowerCase()
             .includes(searchTerm.toLowerCase())
     );
@@ -23,7 +23,8 @@ function Jobs() {
         <div>
             <input
                 type="text"
-                placeholder="Search by keyword or tag..."
+                role="searchbox"
+                placeholder="Filter by keyword or tag..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="search-input"
@@ -32,7 +33,8 @@ function Jobs() {
                 {filteredJobs.map((job) => (
                     <div key={job.id} className="job-card">
                         <h3>{job.title}</h3>
-                        <p>{job.description}</p>
+                        <p>{job.select_description}</p>
+                        <a href={job.company_website}>{job.company_website}</a>
                         <div className="tags">
                             {(job.keywords ?? []).map((tag) => (
                                 <span key={tag} className="tag">

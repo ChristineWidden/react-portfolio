@@ -6,6 +6,10 @@ body {
   margin: 0;
 }
 
+p a {
+  color: white;
+}
+
 .job-card {
   color: black;
 }
@@ -99,7 +103,7 @@ body {
   flex-direction: column;
 }
 
-.content {
+.main {
   flex: 1; /* take all available space */
 }
 
@@ -141,3 +145,4 @@ body {
 .read-the-docs {
   color: #888;
 }
+

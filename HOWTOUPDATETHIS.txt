@@ -1,1 +1,5 @@
+To upload changes:
 npm run deploy
+
+To run locally: 
+npm run dev

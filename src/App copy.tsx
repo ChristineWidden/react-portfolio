@@ -43,11 +43,11 @@ function App() {
       type: "project" as const,
     })),
     ...jobs
-    .filter((job) => Array.isArray(job.description)) // ✅ only include jobs with valid descriptions
+    .filter((job) => Array.isArray(job.select_description)) // ✅ only include jobs with valid descriptions
     .map((job, i) => ({
       id: i + 1000, // offset to prevent key conflicts
       title: job.title,
-      description: (job.description ?? []).join(" "),
+      description: (job.select_description ?? []).join(" "),
       image: job.id ?? "null",
       keywords: job.keywords ?? [],
       type: "job" as const,

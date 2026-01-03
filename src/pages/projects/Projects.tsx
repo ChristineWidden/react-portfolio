@@ -14,14 +14,16 @@ function Projects() {
     const filteredProjects = projects.filter((proj) =>
         (proj.name + proj.desc.join(" ") + (proj.keywords ?? []).join(" "))
             .toLowerCase()
-            .includes(searchTerm.toLowerCase())
+            .includes(searchTerm.toLowerCase()) &&
+            (proj.keywords.length > 0)
     );
 
     return (
         <div>
             <input
                 type="text"
-                placeholder="Search by keyword or tag..."
+                role="searchbox"
+                placeholder="Filter by keyword or tag..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="search-input"
@@ -31,7 +33,7 @@ function Projects() {
                     <ProjectCard
                         key={proj.id}
                         title={proj.name}
-                        description={proj.desc.join(" ")}
+                        description={proj.desc[0]}
                         image={proj.id || "null"}
                     />
                 ))}

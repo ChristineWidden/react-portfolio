@@ -1,0 +1,4 @@
+- add alt text to images on thesis
+- add dates to experience page
+- add company websites to experience page
+- add content to the computer graphics projects page

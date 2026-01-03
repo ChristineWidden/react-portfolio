@@ -32,55 +32,32 @@
             "company": "FlatNine Games",
             "start_date": "December 2025",
             "end_date": "Current",
-            "description": [
-                "Playtested an in-development game, providing detailed feedback on bugs and user experience."
+            "select_description": [
+                ["Playtested an in-development game, providing detailed feedback on bugs and user experience."],
+                []
             ],
-            "keywords":
-            [
+            "company_website": "https://www.flatninegames.com/",
+            "keywords": [
                 "AI",
                 "Artificial Intelligence"
             ]
         },
         {
             "title": "Software Engineer (Freelance)",
-            "id": "dataannotation_temp",
-            "company": "DataAnnotation",
-            "start_date": "August 2025",
-            "end_date": "Current",
-            "description": [
-                "Created and reviewed diverse coding tasks across Python, C++, and JavaScript, providing clear solutions and feedback to refine AI systems."
-            ],
-            "keywords":
-            [
-                "AI",
-                "Artificial Intelligence"
-            ]
-        },
-        {
-            "title": "Software Engineer (Contract)",
-            "id": "dataannotation_temp",
-            "company": "DataAnnotation",
-            "start_date": "August 2025",
-            "end_date": "Current",
-            "description": [
-                "Created and reviewed diverse coding tasks across Python, C++, and JavaScript, providing clear solutions and feedback to refine AI systems."
-            ],
-            "keywords":
-            [
-                "AI",
-                "Artificial Intelligence"
-            ]
-        },
-        {
-            "title": "Software Engineer (Contract)",
             "company": "DataAnnotation",
             "start_date": "August 2024",
             "end_date": "Current",
-            "description": [
-                "Created and reviewed diverse coding tasks across major languages, providing clear solutions and feedback."
+            "select_description": [
+                [
+                    "Created and reviewed diverse coding tasks across major languages, providing clear solutions and feedback."
+                ],
+                [
+                    "Created and reviewed diverse coding tasks across Python, C++, and JavaScript, providing clear solutions and feedback to refine AI systems."
+                ],
+                []
             ],
-            "keywords":
-            [
+            "company_website": "https://www.dataannotation.tech/",
+            "keywords": [
                 "AI",
                 "Artificial Intelligence"
             ]
@@ -91,10 +68,12 @@
             "company": "Hypertherm",
             "start_date": "June 2024",
             "end_date": "September 2024",
-            "description": [
-                "Developed Python test scripts in TestComplete to automate UI localization testing, verifying multi-language functionality for client-facing applications. Submitted bug reports with Jira.",
-                "Improved test coverage and streamlined bug reporting, reducing manual testing and contributing to efficient, high-quality software releases."
+            "select_description": [
+                ["Developed Python test scripts in TestComplete to automate UI localization testing, verifying multi-language functionality for client-facing applications. Submitted bug reports with Jira.",
+                "Improved test coverage and streamlined bug reporting, reducing manual testing and contributing to efficient, high-quality software releases."],
+                []
             ],
+            "company_website": "https://www.omax.com/en/us",
             "keywords": [
                 "Python",
                 "TestComplete",
@@ -114,11 +93,14 @@
             "company": "Cal Poly",
             "start_date": "September 2023",
             "end_date": "March 2024",
-            "description": [
-                "Advised students on setting up development environments, managing work balance with a group, and developing and debugging their games made in Unity, Inform7, Godot, and Unreal Engine, and written in languages such as C#, C++, and Python.",
+            "select_description": [
+                ["Advised students on setting up development environments, managing work balance with a group, and developing and debugging their games made in Unity, Inform7, Godot, and Unreal Engine, and written in languages such as C#, C++, and Python.",
                 "Aided Dr. April Grow in grading student’s game analysis essays and other writeups.",
-                "Provided further game development advice and programming assistance outside of class hours."
+                "Provided further game development advice and programming assistance outside of class hours."],
+                ["Guided students in software development practices, debugging, and programming across multiple engines."],
+                []
             ],
+            "company_website": "https://www.calpoly.edu/major/computer-science",
             "keywords": [
                 "Unity",
                 "Godot",
@@ -137,35 +119,18 @@
             ]
         },
         {
-            "title": "Interactive Entertainment Instructional Student Assistant",
-            "id": "interactive_entertainment_isa",
-            "company": "Cal Poly",
-            "start_date": "September 2023",
-            "end_date": "March 2024",
-            "description": [
-                "Guided students in software development practices, debugging, and programming across multiple engines."
-            ],
-            "keywords": [
-            ]
-        },
-        {
-            "title": "Interactive Entertainment Instructional Student Assistant",
-            "company": "Cal Poly",
-            "start_date": "September 2023",
-            "end_date": "March 2024",
-            "keywords": []
-        },
-        {
             "title": "Software Development Engineer in Test Intern",
             "id": "symetrix_intern",
             "company": "Symetrix",
             "start_date": "June 2023",
             "end_date": "September 2023",
-            "description": [
-                "Was responsible for developing the entire automated UI test suite for an application.",
+            "select_description": [
+                ["Was responsible for developing the entire automated UI test suite for an application.",
                 "Taught myself to use the Playwright test automation library with TypeScript based on my experience with Selenium.",
-                "Utilized Git and GitHub Actions for version control and reviewed the pull requests of coworkers, updated codebase through CI/CD, and utilized Agile and Jira for project management and bug reporting."
+                "Utilized Git and GitHub Actions for version control and reviewed the pull requests of coworkers, updated codebase through CI/CD, and utilized Agile and Jira for project management and bug reporting."],
+                []
             ],
+            "company_website": "https://www.symetrix.co/",
             "keywords": [
                 "Playwright",
                 "TypeScript",
@@ -183,23 +148,19 @@
             ]
         },
         {
-            "title": "Software Development Engineer in Test Intern",
-            "company": "Symetrix",
-            "start_date": "June 2023",
-            "end_date": "September 2023",
-            "keywords": []
-        },
-        {
             "title": "Corporate Enterprise Architecture Intern",
             "id": "compucom_intern",
             "company": "CompuCom",
             "start_date": "July 2022",
             "end_date": "January 2023",
-            "description": [
-                "Reported to the IT Architect and assisted with the management of data relating to the internal Enterprise Architecture Group.",
+            "select_description": [
+                ["Reported to the IT Architect and assisted with the management of data relating to the internal Enterprise Architecture Group.",
                 "Automated consolidation of data from different sources in Excel, utilizing macros and the VLOOKUP formula.",
-                "Facilitated communication between manager and team in the creation of SharePoint pages to organize department information and appointments on an internal company website."
+                "Facilitated communication between manager and team in the creation of SharePoint pages to organize department information and appointments on an internal company website."],
+                ["Automated Excel data workflows with VBA and built SharePoint pages to support enterprise IT team."],
+                []
             ],
+            "company_website": "https://www.compucom.com/",
             "keywords": [
                 "Excel",
                 "VBA Macros",
@@ -212,24 +173,6 @@
                 "Documentation",
                 "Enterprise Architecture"
             ]
-        },
-        {
-            "title": "Corporate Enterprise Architecture Intern",
-            "id": "compucom_intern",
-            "company": "CompuCom",
-            "start_date": "July 2022",
-            "end_date": "January 2023",
-            "description": [
-                "Automated Excel data workflows with VBA and built SharePoint pages to support enterprise IT team."
-            ],
-            "keywords": []
-        },
-        {
-            "title": "Corporate Enterprise Architecture Intern",
-            "company": "CompuCom",
-            "start_date": "July 2022",
-            "end_date": "January 2023",
-            "keywords": []
         }
     ],
     "skills": [
@@ -327,8 +270,7 @@
                     "name": "Software Engineering I: Graduate Level",
                     "id": "software_engineering_1",
                     "description": "In-depth study of requirements engineering, design patterns, software project management, formal specifications and object-oriented analysis.",
-                    "keywords": [
-                    ]
+                    "keywords": []
                 },
                 {
                     "name": "Artificial Intelligence: Graduate Level",
@@ -366,8 +308,7 @@
                         "Rigging",
                         "Computer Graphics"
                     ]
-                }
-,
+                },
                 {
                     "name": "System Security",
                     "id": "system_security",
@@ -613,12 +554,6 @@
                 "A 60-page thesis about accessibility in video games, for my Master's in Computer Science. Created a Unity-based game to run a study on how accessibility features affect player experience."
             ],
             "keywords": [
-                "Writing",
-                "Accessibility",
-                "Game Accessibility",
-                "Accessibility Settings",
-                "Unity",
-                "Game Development"
             ]
         },
         {
@@ -639,6 +574,15 @@
                 "Team Collaboration",
                 "Playtesting",
                 "Agile Development"
+            ]
+        },
+        {
+            "name": "Alien Invasion",
+            "id": "alien_invasion",
+            "desc": [
+                "Worked with a team to develop a Unity-based tower defense game written in the language C#."
+            ],
+            "keywords": [
             ]
         },
         {
@@ -676,19 +620,12 @@
         },
         {
             "name": "OpenGL Projects",
-            "id": "opengl_projects",
+            "id": "graphics_projects",
             "desc": [
                 "Implemented custom vertex and fragment shaders in GLSL to create real-time lighting, texturing, and visual effects in OpenGL.",
                 "Optimized rendering performance by applying fundamental algorithms and data structures in C++."
             ],
             "keywords": [
-                "OpenGL",
-                "C++",
-                "3D Graphics",
-                "Rendering",
-                "Animation",
-                "Shaders",
-                "GPU Programming"
             ]
         },
         {

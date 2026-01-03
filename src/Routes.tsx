@@ -7,7 +7,7 @@ import App from "./App";
 
 function AppRoutes() {
     return (
-        <div className="content">
+        <div className="main">
             <Routes>
                 <Route path="/" element={<App />} />
                 <Route path="/experience" element={<Jobs />} />
