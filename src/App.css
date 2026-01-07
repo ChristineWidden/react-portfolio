@@ -65,13 +65,14 @@ p a {
 
 .item-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 320px));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 300px));
   gap: 2rem;              /* consistent spacing */
   justify-content: center; /* keeps grid centered no matter screen size */
   align-items: start;
-  max-width: 1200px;
+  max-width: 10000px;
   margin: 0 auto;
   padding: 2rem;
+  font-size: large;
 }
 
 .job-card {
@@ -101,6 +102,8 @@ p a {
   min-height: 100vh; /* full height of viewport */
   display: flex;
   flex-direction: column;
+
+    font-size: 25px;
 }
 
 .main {

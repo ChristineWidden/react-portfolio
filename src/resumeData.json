@@ -18,6 +18,7 @@
         "425-442-8220"
     ],
     "website": [
+        "christinewidden.com",
         "https://linktr.ee/cwidden",
         "linkedin.com/in/christinewidden",
         "https://github.com/ChristineWidden"
@@ -181,6 +182,7 @@
         "C and C++",
         "C#, C++, Java, Python, JavaScript, Others",
         "C#, C++, Java, Python, JavaScript",
+        "C-related languages",
         "Java, Python, JavaScript",
         "Various Programming Languages",
         "Java",
@@ -217,6 +219,7 @@
         "Computer Graphics",
         "Autodesk Maya",
         "GLSL",
+        "HLSL",
         "Shaders",
         "Software Development",
         "Software Development Life Cycle",
@@ -795,6 +798,17 @@
                 "LSTM",
                 "Policy Optimization",
                 "Game Theory"
+            ]
+        },
+        {
+            "name": "Maya Projects",
+            "id": "maya_projects",
+            "desc": [
+                "Completed various projects demonstrating 3d modeling, texturing, rigging, animation, and rendering skills using Autodesk Maya."
+            ],
+            "keywords": [
+                "Maya",
+                "3D Modeling"
             ]
         }
     ],
