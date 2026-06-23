@@ -11,6 +11,8 @@ function GraphicsProjectDetails() {
                         <button>Graphics midterm on GitHub</button></a>
                 </div>
 
+                {/* TODO compress these gifs */}
+                {/* TODO edit gifs so they loop */}
                 <div className="image-grid">
                     <video controls>
                         <source src={`${import.meta.env.BASE_URL}images/project_images/graphics_project/animation_final_video.mp4`} type="video/mp4" />

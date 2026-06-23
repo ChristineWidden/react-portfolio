@@ -6,6 +6,7 @@ import Image2Recipe from "./image_2_recipe";
 import RecipeRecommender from "./recipe_recommender";
 import ResumeBuilder from "./resume_builder";
 import GraphicsProject from "./graphics_projects";
+import MayaProjects from "./maya_projects";
 
 // Map slug → detail component
 const projectDetails: Record<string, React.FC | undefined> = {
@@ -17,6 +18,7 @@ const projectDetails: Record<string, React.FC | undefined> = {
     "recipe_recommender": RecipeRecommender,
     "resume_builder": ResumeBuilder,
     "graphics_projects": GraphicsProject,
+    "maya_projects": MayaProjects,
 };
 
 export default projectDetails;
