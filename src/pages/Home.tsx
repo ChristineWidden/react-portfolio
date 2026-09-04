@@ -12,7 +12,7 @@ export default function Home() {
 
                 <img
                     className="intro-image"
-                    src={`${import.meta.env.BASE_URL}images/home/asggag-graded.png`}
+                    src={`${import.meta.env.BASE_URL}images/home/IMG_7141_Smaller.png`}
                     alt="A young woman with curly hair wearing a suit jacket, smiling as she takes a selfie."
                 />
             </div>

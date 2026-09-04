@@ -38,7 +38,7 @@
             "end_date": "Current",
             "select_description": [
                 [
-                    "Diagnose hardware and software problems for student laptops. Replace and repair identified broken parts. Run software and hardware tests, evaluate functionality, and write reports."
+                    "Complete upwards of 8 diagnoses and repairs of hardware and software problems for student laptops. Replace and repair identified broken parts. Run software and hardware tests, evaluate functionality, and write reports on how the problem was solved, what parts were used, if warranty applies, and cost justification."
                 ]
             ],
             "company_website": "https://microk12.com/",
@@ -180,7 +180,7 @@
                 [
                     "Built an automated UI test suite containing 60+ end-to-end tests using Playwright and TypeScript after independently learning the framework.",
                     "Met with 3 software engineers during SCRUM and Agile to prioritize testing, troubleshoot failures, review pull requests through GitHub Actions, and improve software quality.",
-                    "Used Git, GitHub Actions, Jira, and CI/CD workflows to maintain test infrastructure and documentation."
+                    "Used Git, GitHub Actions, Jira, ChatGPT, and CI/CD workflows to maintain test infrastructure and documentation."
                 ],
                 [
                     "Built an automated Playwright test suite containing 60+ end-to-end tests from the ground up to validate UI interactivity of audio software.",
@@ -720,6 +720,14 @@
                 "Implemented Euler integration for velocity and acceleration to achieve precise character locomotion control (Mario-style movement)."
             ],
             "keywords": []
+        },
+        {
+            "name": "Unreal Engine Materials",
+            "id": "unreal_materials",
+            "desc": [
+                "Various custom materials made in the UE5 material editor."
+            ],
+            "keywords": ["Unreal Engine"]
         },
         {
             "name": "Alien Invasion",

@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="/src/App.css">
     <style>
         .link-card {
-            display: flex;
+            display: grid;
+            grid-template-columns: 2rem minmax(0, 1fr) auto;
             align-items: center;
-            justify-content: space-between;
+            gap: 0.75rem;
             padding: 1rem 1.15rem;
             color: white;
             background: rgb(16, 32, 64);
@@ -23,6 +24,21 @@
         .link-card:focus-visible {
             background: rgb(27, 50, 92);
             border-color: #007acc;
+        }
+
+        .link-card img {
+            width: 2rem;
+            height: 2rem;
+            flex: 0 0 2rem;
+            object-fit: contain;
+        }
+
+        .link-card:not(:has(img)) {
+            grid-template-columns: minmax(0, 1fr) auto;
+        }
+
+        .link-card > span:not(.link-arrow) {
+            min-width: 0;
         }
     </style>
     <title>Christine Widden | Links</title>
@@ -41,54 +57,77 @@
             <h2 id="connect-heading">Connect</h2>
             <div class="links-grid links-grid-connect">
                 <a class="link-card" href="https://github.com/ChristineWidden" target="_blank"
-                    rel="noopener noreferrer"><span><span class="link-title">GitHub</span><span class="link-detail">Code
-                            and experiments</span></span><span class="link-arrow" aria-hidden="true">&#8599;</span></a>
+                    rel="noopener noreferrer">
+                    <img src="src/assets/icons/github.png" height="100%">
+                    <span>
+                        <span class="link-title">GitHub</span>
+                        <span class="link-detail">Code
+                            and experiments</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">&#8599;</span></a>
                 <a class="link-card" href="https://www.linkedin.com/in/christinewidden/" target="_blank"
-                    rel="noopener noreferrer"><span><span class="link-title">LinkedIn</span><span
-                            class="link-detail">Professional profile</span></span><span class="link-arrow"
-                        aria-hidden="true">&#8599;</span></a>
-                <a class="link-card" href="https://christinewidden.com/" target="_blank"
-                    rel="noopener noreferrer"><span><span class="link-title">Portfolio</span><span
-                            class="link-detail">Main website</span></span><span class="link-arrow"
-                        aria-hidden="true">&#8599;</span></a>
+                    rel="noopener noreferrer">
+                    <img src="src/assets/icons/linkedin.png" height="100%">
+                    <span>
+                        <span class="link-title">LinkedIn</span><span class="link-detail">Professional profile</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">&#8599;</span></a>
+                <a class="link-card" href="https://christinewidden.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="src/assets/icons/online-resume.png" height="100%">
+                    <span>
+                        <span class="link-title">Portfolio</span>
+                        <span class="link-detail">Main website</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">&#8599;</span></a>
+            </div>
+        </section>
+
+
+        <section aria-labelledby="games-heading">
+            <h2 id="games-heading">Games and Such</h2>
+            <div class="links-grid">
+                <a class="link-card" href="/#/projects/alien_invasion">
+                    <span><span class="link-title">Alien
+                            Invasion</span><span class="link-detail">Unity tower defense game</span></span><span
+                        class="link-arrow" aria-hidden="true">&#8594;</span></a>
+                <a class="link-card" href="/#/projects/goblin_chase"><span><span class="link-title">Goblin
+                            Chase</span><span class="link-detail">Unity 2D platformer and shooter</span></span><span
+                        class="link-arrow" aria-hidden="true">&#8594;</span></a>
+                <a class="link-card" href="/#/projects/ms_thesis"><span><span class="link-title">The Impact of Accessibility Features on Player Experience in Video Games</span><span class="link-detail">Unity research environment</span></span><span
+                        class="link-arrow" aria-hidden="true">&#8594;</span></a>
+                <a class="link-card" href="/~cwidden/Memories of the Stars/play.html"><span><span class="link-title">Memories of the Stars</span><span class="link-detail">Short Inform 7 interactive fiction game</span></span><span
+                        class="link-arrow" aria-hidden="true">&#8594;</span></a>
+                <a class="link-card" href="/~cwidden/Nether Escape/Nether_Escape.html"><span><span class="link-title">Nether Escape</span><span class="link-detail">Short Twine interactive fiction game</span></span><span
+                        class="link-arrow" aria-hidden="true">&#8594;</span></a>
+                <a class="link-card" href="/~cwidden/Animation Project/index.html"><span><span class="link-title">Animation Project</span><span class="link-detail">Pokemon animation made with OpenGL</span></span><span
+                        class="link-arrow" aria-hidden="true">&#8594;</span></a>
+                <a class="link-card" href="/~cwidden/cpe123/cpe123/index.html"><span><span class="link-title">Various Programming Artwork</span><span class="link-detail">Javascript-based artwork</span></span><span
+                        class="link-arrow" aria-hidden="true">&#8594;</span></a>
+                <a class="link-card" href="https://christinewidden.itch.io/starbeat"><span><span class="link-title">Starbeat</span><span class="link-detail">A short game with rhythm elements, inspired by Everhood</span></span><span
+                        class="link-arrow" aria-hidden="true">&#8594;</span></a>
             </div>
         </section>
 
         <section aria-labelledby="projects-heading">
             <h2 id="projects-heading">Project pages</h2>
             <div class="links-grid">
-                <a class="link-card" href="/projects/resume_builder"><span><span class="link-title">Curated Resume
+                <a class="link-card" href="/#/projects/resume_builder"><span><span class="link-title">Curated Resume
                             Builder</span><span class="link-detail">Full-stack application</span></span><span
                         class="link-arrow" aria-hidden="true">&#8594;</span></a>
-                <a class="link-card" href="/projects/graphics_projects"><span><span class="link-title">Computer
+                <a class="link-card" href="/#/projects/graphics_projects"><span><span class="link-title">Computer
                             Graphics</span><span class="link-detail">OpenGL and shader work</span></span><span
                         class="link-arrow" aria-hidden="true">&#8594;</span></a>
-                <a class="link-card" href="/projects/ms_thesis"><span><span class="link-title">Master's
+                <a class="link-card" href="/#/projects/ms_thesis"><span><span class="link-title">Master's
                             Thesis</span><span class="link-detail">Accessibility and player
                             experience</span></span><span class="link-arrow" aria-hidden="true">&#8594;</span></a>
-                <a class="link-card" href="/projects/recipe_recommender"><span><span class="link-title">Recipe
+                <a class="link-card" href="/#/projects/recipe_recommender"><span><span class="link-title">Recipe
                             Recommender</span><span class="link-detail">Machine learning project</span></span><span
                         class="link-arrow" aria-hidden="true">&#8594;</span></a>
-                <a class="link-card" href="/projects/image_2_recipe"><span><span
+                <a class="link-card" href="/#/projects/image_2_recipe"><span><span
                             class="link-title">Image2Recipe</span><span class="link-detail">Computer vision
                             project</span></span><span class="link-arrow" aria-hidden="true">&#8594;</span></a>
-                <a class="link-card" href="/projects/prisoners_ai"><span><span class="link-title">Prisoner's Dilemma
+                <a class="link-card" href="/#/projects/prisoners_ai"><span><span class="link-title">Prisoner's Dilemma
                             AI</span><span class="link-detail">Reinforcement learning</span></span><span
-                        class="link-arrow" aria-hidden="true">&#8594;</span></a>
-            </div>
-        </section>
-
-        <section aria-labelledby="games-heading">
-            <h2 id="games-heading">Games</h2>
-            <div class="links-grid">
-                <a class="link-card" href="/projects/alien_invasion"><span><span class="link-title">Alien
-                            Invasion</span><span class="link-detail">Unity tower defense game</span></span><span
-                        class="link-arrow" aria-hidden="true">&#8594;</span></a>
-                <a class="link-card" href="/projects/goblin_chase"><span><span class="link-title">Goblin
-                            Chase</span><span class="link-detail">Unity 2D platformer and shooter</span></span><span
-                        class="link-arrow" aria-hidden="true">&#8594;</span></a>
-                <a class="link-card" href="/projects/ms_thesis"><span><span class="link-title">Accessibility Study
-                            Game</span><span class="link-detail">Unity research environment</span></span><span
                         class="link-arrow" aria-hidden="true">&#8594;</span></a>
             </div>
         </section>
