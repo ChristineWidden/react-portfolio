@@ -37,7 +37,7 @@ function App() {
     ...projects.map((proj, i) => ({
       id: i,
       title: proj.name,
-      description: proj.desc.join(" "),
+      description: (proj.desc ?? []).join(" "),
       image: proj.id ?? "null",
       keywords: proj.keywords ?? [],
       type: "project" as const,

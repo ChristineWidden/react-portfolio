@@ -1,5 +1,31 @@
-p {
-  font-size: larger;
+.mainbody {
+  width: 100%;
+}
+
+.intro-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .intro-layout {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .intro-text {
+    flex: 1 1 0;
+    font-size: 2rem;
+  }
+
+  .intro-image {
+    flex: 0 0 45%;
+    max-width: 45%;
+    border-radius: 5%;
+    border: 3px solid white;
+  }
 }
 
 .image-grid {

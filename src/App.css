@@ -1,18 +1,44 @@
 /* App.css */
 
 body {
-  background-image: linear-gradient(black, rgb(25, 0, 78));
+  /* background-image: linear-gradient(black, rgb(25, 0, 78)); */
+  background-image: linear-gradient(black, rgb(146, 133, 173));
   color: white;
+  font-family: monospace, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin: 0;
+}
+
+#root {
+  /* max-width: 2000px; */
+  margin: 0 auto;
+  padding: 0rem;
+  text-align: center;
+  /* min-height: 50rem; */
+  min-height: 100vh; /* full height of viewport */
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
 }
 
 p a {
   color: white;
 }
 
-.job-card {
-  color: black;
+.thesis p a {
+  color: rgb(12, 21, 46);
+  text-decoration: underline;
 }
+
+.thesisContents {
+  margin: 4rem;
+}
+
+@media (max-width: 1200px) {
+  .thesisContents {
+    margin: 0.5rem;
+  }
+}
+
 
 .navbar {
   display: flex;
@@ -75,12 +101,19 @@ p a {
   font-size: large;
 }
 
+.jobs-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 350px));
+}
+
 .job-card {
+  color: black;
   border: 1px solid #ddd;
   padding: 1rem;
   border-radius: 12px;
-  width: 250px;
+  width: 300px;
   background: white;
+  height: 400px;
+  overflow: hidden;
 }
 
 .tag {
@@ -93,21 +126,11 @@ p a {
 }
 
 
-#root {
-  /* max-width: 2000px; */
-  margin: 0 auto;
-  padding: 0rem;
-  text-align: center;
-  /* min-height: 50rem; */
-  min-height: 100vh; /* full height of viewport */
-  display: flex;
-  flex-direction: column;
 
-    font-size: 25px;
-}
 
 .main {
   flex: 1; /* take all available space */
+  padding: 0% 3% 5% 3%;
 }
 
 .logo {
@@ -147,5 +170,130 @@ p a {
 
 .read-the-docs {
   color: #888;
+}
+
+.links-page {
+  width: min(100% - 2rem, 46rem);
+  margin: 0 auto;
+  padding: 4rem 0 3rem;
+  text-align: left;
+}
+
+.links-header {
+  margin-bottom: 2.5rem;
+}
+
+.links-eyebrow {
+  margin: 0 0 0.75rem;
+  color: #eee;
+  font-size: 0.78rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.links-page h1 {
+  max-width: 12ch;
+  margin: 0;
+  font-size: clamp(2.2rem, 10vw, 4rem);
+  line-height: 1.1;
+}
+
+.links-intro {
+  max-width: 38rem;
+  margin: 1.25rem 0 0;
+  color: #eee;
+  font-size: larger;
+}
+
+.links-page section {
+  margin-top: 2.5rem;
+}
+
+.links-page h2 {
+  margin: 0 0 0.8rem;
+  font-size: 1rem;
+}
+
+.links-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.link-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 4.25rem;
+  padding: 1rem 1.15rem;
+  color: white;
+  background: rgb(16, 32, 64);
+  border: 1px solid white;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.link-card:hover,
+.link-card:focus-visible {
+  background: rgb(27, 50, 92);
+  border-color: #007acc;
+  transform: translateY(-2px);
+}
+
+.link-card:focus-visible {
+  outline: 3px solid #007acc;
+  outline-offset: 3px;
+}
+
+.link-title,
+.link-detail {
+  display: block;
+}
+
+.link-title {
+  font-size: 1.15rem;
+}
+
+.link-detail,
+.links-footer {
+  color: #eee;
+  font-size: 0.78rem;
+}
+
+.link-detail {
+  margin-top: 0.15rem;
+}
+
+.link-arrow {
+  flex: 0 0 auto;
+  color: white;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.links-footer {
+  margin-top: 3.5rem;
+}
+
+@media (min-width: 700px) {
+  .links-page {
+    padding-top: 7rem;
+  }
+
+  .links-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .links-grid-connect {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link-card {
+    transition: none;
+  }
 }
 

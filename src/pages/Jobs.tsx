@@ -29,11 +29,14 @@ function Jobs() {
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="search-input"
             />
-            <div className="item-grid">
+            <div className="item-grid jobs-grid">
                 {filteredJobs.map((job) => (
                     <div key={job.id} className="job-card">
                         <h3>{job.title}</h3>
-                        <p>{job.select_description}</p>
+                        <div className="description">
+                            <p>{job.select_description}</p>
+                        </div>
+                        
                         <a href={job.company_website}>{job.company_website}</a>
                         <div className="tags">
                             {(job.keywords ?? []).map((tag) => (
