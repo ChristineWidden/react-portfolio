@@ -7,6 +7,7 @@ import RecipeRecommender from "./recipe_recommender";
 import ResumeBuilder from "./resume_builder";
 import GraphicsProject from "./graphics_projects";
 import MayaProjects from "./maya_projects";
+import UnrealMaterials from "./unreal_materials";
 
 // Map slug → detail component
 const projectDetails: Record<string, React.FC | undefined> = {
@@ -19,6 +20,7 @@ const projectDetails: Record<string, React.FC | undefined> = {
     "resume_builder": ResumeBuilder,
     "graphics_projects": GraphicsProject,
     "maya_projects": MayaProjects,
+    "unreal_materials": UnrealMaterials,
 };
 
 export default projectDetails;

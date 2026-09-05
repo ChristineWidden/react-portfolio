@@ -115,3 +115,17 @@ button {
     max-width: min(700px, 100%);
     height: auto;
 }
+
+.ue5-material-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.ue5-material-grid img,
+.ue5-material-grid video {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+}
