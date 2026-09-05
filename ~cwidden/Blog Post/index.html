@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Post</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+  <main>
+    <article>
+      <h2>The Mirai Botnet: The Minecraft Server Attack that Threatened the World</h2>
+      <p class="post-meta">Posted on December 14, 2023 by Christine Widden</p>
+      <p><strong><span style="font-size:11pt;">I. Introduction</span></strong><span style="font-size:11pt;">&nbsp;</span></p>
+      <p style="text-align: center;"><strong><span style="font-size:11pt;">The Internet of Things</span></strong></p>
+      <p><span style="font-size:11pt;">The Internet of Things refers to all the devices in our daily lives with internet connectivity and internal computers that we wouldn&rsquo;t think of if asked to point out all the computers in our homes. The Internet of Things includes TVs, smart assistants, printers, wifi-enabled thermostats, app-controlled lights, and more.&nbsp;</span></p>
+      <p><span style="font-size:11pt;">&nbsp; &nbsp;&nbsp;</span><span style="font-size:11pt;">However, as the devices in our homes grow more connected, we also grow more exposed. IoT devices are often given far less attention than computers and desktops when it comes to security, and there are consequences to this. This could pose a risk to the user: a device that handles confidential information, such as a smart home device used to make online purchases, could be compromised due to weak security and leak this information to attackers. But it is not just a personal risk posed by IoT devices. Poor IoT device security is a threat to the entire internet.</span></p>
+      <p style="text-align: center;"><strong><span style="font-size:11pt;">Botnets and DDoS Attacks</span></strong></p>
+      <p><span style="font-size:11pt;">A Distributed Denial of Service attack, or DDoS attack, is a cyber-attack where a large number of computers attempt to contact one website or other web service, overwhelming it and making it inaccessible to normal users. DDoS attacks are deployed using botnets, or networks of devices controlled by one user, allowing coordinated attacks to be made. This is where the term Distributed Denial of Service comes from: a distributed network of bots attacks one target such as a website, denying users access to that website. Botnets are often acquired through the spread of viruses that silently infect as many devices as possible, remaining dormant until it is time for a DDoS attack to be deployed.</span></p>
+      <p><span style="font-size:11pt;">In 2016, the internet was swept by a wave of devastating botnet attacks many times larger than what websites had experienced before. These attacks were caused by the Mirai botnet, a devastating new kind of botnet attack that took advantage of the weaknesses of IoT security to create DDoS smart device armies.&nbsp;</span></p>
+      <p style="text-align: center;"><strong><span style="font-size:11pt;">The Mirai Botnet</span></strong></p>
+      <p><span style="font-size:11pt;">Mirai scans the internet for IoT devices and attempts to access them using that device&rsquo;s default security settings. Mirai was originally developed by three Rutgers University students for a specific market: Minecraft servers. Running a successful Minecraft server can be very lucrative, with lots of money to be made if you can convince a large player base to purchase memberships and random rewards to give them an advantage in that particular Minecraft world. Money on the line created an incentive to sabotage competing Minecraft servers, and there was money to be made in being the one who did the sabotaging.&nbsp;</span></p>
+      <p><span style="font-size:11pt;">Thus, Mirai emerged as a service for sending DDoS attacks against competing Minecraft servers. Eventually, the source code for Mirai would be released, allowing the knowledge of how to execute this devastating attack to spread across the internet.</span></p>
+      <p><span style="font-size:11pt;">The botnet begins by searching random IP addresses for IoT devices. When potential IoT devices are found, the botnet accesses a saved database of default security credentials for these devices and attempts to log in. When this login attempt is successful, malware (viruses) can then be installed on the device, adding the device to the botnet, and allowing it to take part in delivering DDoS attacks. The server distributing the attack can then keep a list of these infected devices for later use.</span></p>
+      <p style="text-align: center;"><strong><span style="font-size:11pt;">Attacks</span></strong></p>
+      <p><span style="font-size:11pt;">One of the first attacks to grab significant attention was against French web hosting provider OVH. Web hosting providers host websites on their servers so that individual users and companies don&rsquo;t have to, providing an important service with a key disadvantage: if you take down the web hosting provider, you take down all the websites it hosts with it.</span></p>
+      <p><span style="font-size:11pt;">When a new attack was leveraged against a blog reporting on the release of the Mirai source code, run by security researcher Brian Krebs, Project Shield by Google became involved to help combat the censorship, and the attacks began to be perceived as more important by the FBI.</span></p>
+      <p><span style="font-size:11pt;">The situation escalated further when Dynamic Network Services, Inc. was targeted, causing large-scale disruption to many popular websites across the internet. These websites included Twitter, Spotify, Amazon, PayPal, Github, and Netflix.</span></p>
+      <p><span style="font-size:11pt;">Attacks were even made against the creator&rsquo;s own university, seeking to take down key systems during midterms, finals, and class registration.</span></p>
+      <p><span style="font-size:11pt;">Overall, these attacks were found to be using hundreds of thousands of infected devices.</span></p>
+      <p style="text-align: center;"><strong><span style="font-size:11pt;">The Impact</span></strong></p>
+      <p><span style="font-size:11pt;">The attack against Dynamic Network Services, or Dyn, left many websites and their users without service for hours. Though the precise amount of revenue lost due to this attack is not known, it can be assumed that it was not an insignificant amount. After the attack on Dyn, 8% of thier internet domains switched to a different DNS service provider.</span></p>
+      <p style="text-align: center;"><strong><span style="font-size:11pt;">Protecting Yourself Against Botnets</span></strong></p>
+      <p><span style="font-size:11pt;">The first and foremost step in protecting yourself against botnets and other security threats is to keep your devices updated. This is especially important for your personal computer, which is threatened by far more than just botnets like Mirai. Updates often include patches to the latest discovered security weaknesses. By keeping your computer updated, you give malicious actors less of an opening to attack you. In the past, it was also considered very important to have a high-quality antivirus program installed, and depending on the computer you use, this may still be the case. However, for devices such as Windows and Mac computers, this may no longer be necessary, as antivirus protection is included with modern devices. Today, Windows Antivirus can generally be relied upon to keep your device safe-- so long as you keep your computer updated.</span></p>
+      <p><span style="font-size:11pt;">But what about IoT devices?</span></p>
+      <p><span style="font-size:11pt;">The first step in protecting yourself is to purchase your IoT devices from reputable sources. Read user reviews and professional reviews, and look at unofficial websites like Reddit to find reviews that are less likely to have been edited.</span></p>
+      <p><span style="font-size:11pt;">The next step is to change the default password for your device. Mirai and its successors rely on devices using their default factory settings. This weakness can no longer be exploited if you simply change these settings.</span></p>
+      <p><span style="font-size:11pt;">The third step, like with your personal computer, is to ensure that your device is updated. Turn on automatic updates if possible, and always update when notifications instructing you to do so pop up.</span></p>
+      <p><span style="font-size:11pt;">Finally, disable unnecessary and unused network features, and turn on privacy protections where possible. By taking these steps, you can reduce the number of ways hackers could have access to your IoT devices.</span></p>
+      <p style="text-align: center;"><strong><span style="font-size:11pt;">Conclusion</span></strong></p>
+      <p><span style="font-size:11pt;">As an individual user, the threat posed to you by botnets is relatively small compared to other viruses such as ransomware, in which hackers hijack your computer and encrypt its contents, and claim that they will unlock it if you pay them, or spyware, designed to give hackers access to confidential information, or even gain access to your microphone or camera.</span></p>
+      <p><span style="font-size:11pt;">In contrast, botnets are typically focused on large-scale attacks against large-scale targets, and rarely individual users. However, the threat posed is still not negligible, especially if your IoT devices could be transmitting private information such as health data or recordings of your home. While attackers will probably focus on delivering DDoS attacks, they may also attach spyware or other viruses to the infected device. So, unless you are Amazon, Netflix, or the host of a popular public Minecraft server, you will probably be safe from Mirai-- but it&rsquo;s still a good idea to change those passwords.</span></p>
+      <p style="text-align: center;"><strong><span style="font-size:11pt;">References</span></strong><span style="font-size:11pt;">&nbsp;</span></p>
+      <p><span style="font-size:11pt;">Understanding the Mirai Botnet</span><span style="font-size:11pt;"><br></span><a href="https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/antonakakis"><u><span style="color:#1155cc;font-size:11pt;">https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/antonakakis</span></u></a></p>
+      <p><span style="font-size:11pt;">Mirai NJCCIC Threat Profile</span><span style="font-size:11pt;"><br></span><a href="https://www.cyber.nj.gov/threat-center/threat-profiles/botnet-variants/mirai-botnet"><u><span style="color:#1155cc;font-size:11pt;">https://www.cyber.nj.gov/threat-center/threat-profiles/botnet-variants/mirai-botnet</span></u></a></p>
+      <p><span style="font-size:11pt;">How a Dorm Room Minecraft Scam Brought Down the Internet</span><span style="font-size:11pt;"><br></span><a href="https://www.wired.com/story/mirai-botnet-minecraft-scam-brought-down-the-internet/"><u><span style="color:#1155cc;font-size:11pt;">https://www.wired.com/story/mirai-botnet-minecraft-scam-brought-down-the-internet/</span></u></a></p>
+      <p><span style="font-size:11pt;">Analysis of Mirai Malicious Software</span><span style="font-size:11pt;"><br></span><a href="https://ieeexplore.ieee.org/abstract/document/8115504"><u><span style="color:#1155cc;font-size:11pt;">https://ieeexplore.ieee.org/abstract/document/8115504</span></u></a></p>
+      <p><span style="font-size:11pt;">Financial Impact of Mirai DDoS Attack on Dyn Revealed in New Data</span><span style="font-size:11pt;"><br></span><a href="https://www.corero.com/financial-impact-of-mirai-ddos-attack-on-dyn-revealed-in-new-data/"><u><span style="color:#1155cc;font-size:11pt;">https://www.corero.com/financial-impact-of-mirai-ddos-attack-on-dyn-revealed-in-new-data/</span></u></a></p>
+      <p><span style="font-size:11pt;">How to Defend Your IoT Devices From IoT Botnets</span><span style="font-size:11pt;"><br></span><a href="https://cybersecurity.att.com/blogs/security-essentials/how-to-defend-your-iot-devices-from-iot-botnets"><u><span style="color:#1155cc;font-size:11pt;">https://cybersecurity.att.com/blogs/security-essentials/how-to-defend-your-iot-devices-from-iot-botnets</span></u></a></p>
+      <p><br></p>
+      <p><br></p>
+      <p><br></p>
+      <p><br></p>
+      <p><br></p>
+    </article>
+  </main>
+
+  <footer>
+  </footer>
+
+</body>
+</html>
